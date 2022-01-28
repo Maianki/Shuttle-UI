@@ -1,6 +1,6 @@
 :root{
-    --border-color:#eeeeee;
-    --text-highlight-color:#9a94a1;
+    --BORDER-COLOR:#eeeeee;
+    --TEXT-HIGHLIGHT-COLOR:#9a94a1;
 }
 
 .example-container{
@@ -8,7 +8,7 @@
     flex-direction: column;
     width : 70vw;
     height:auto;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--BORDER-COLOR);
     margin: 1rem;
 }
 
@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--BORDER-COLOR);
     padding: 1.6rem;
     margin:1rem;
 }
@@ -29,5 +29,5 @@
 }
 
 .highlight{
-    color: var(--text-highlight-color);
+    color: var(--TEXT-HIGHLIGHT-COLOR);
 }

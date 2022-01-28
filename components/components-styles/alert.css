@@ -1,16 +1,16 @@
 :root{
-    --primary-alert-color:#1950a1;
-    --secondary-alert-color:#55595e;
-    --success-alert-color:#1e5c3f;
-    --danger-alert-color:#973e46;
-    --warning-alert-color:#a18d51;
-    --info-alert-color:#145d6c;
-    --primary-alert-bgcolor:#cfe2ff;
-    --secondary-alert-bgcolor:#e2e3e5;
-    --success-alert-bgcolor:#d1e7dd;
-    --danger-alert-bgcolor:#f8d7da;
-    --warning-alert-bgcolor:#fff3cd;
-    --info-alert-bgcolor:#cff4fc;
+    --PRIMARY-ALERT-COLOR:#1950a1;
+    --SECONDARY-ALERT-COLOR:#55595e;
+    --SUCCESS-ALERT-COLOR:#1e5c3f;
+    --DANGER-ALERT-COLOR:#973e46;
+    --WARNING-ALERT-COLOR:#a18d51;
+    --INFO-ALERT-COLOR:#145d6c;
+    --PRIMARY-ALERT-BGCOLOR:#cfe2ff;
+    --SECONDARY-ALERT-BGCOLOR:#e2e3e5;
+    --SUCCESS-ALERT-BGCOLOR:#d1e7dd;
+    --DANGER-ALERT-BGCOLOR:#f8d7da;
+    --WARNING-ALERT-BGCOLOR:#fff3cd;
+    --INFO-ALERT-BGCOLOR:#cff4fc;
 }
 
 .alert{
@@ -20,33 +20,33 @@
 }
 
 .alert-primary{
-    background-color: var(--primary-alert-bgcolor);
-    color: var(--primary-alert-color)
+    background-color: var(--PRIMARY-ALERT-BGCOLOR);
+    color: var(--PRIMARY-ALERT-COLOR)
 }
 
 .alert-secondary{
-    background-color: var(--secondary-alert-bgcolor);
-    color: var(--secondary-alert-color)
+    background-color: var(--SECONDARY-ALERT-BGCOLOR);
+    color: var(--SECONDARY-ALERT-COLOR)
 }
 
 .alert-success{
-    background-color: var(--success-alert-bgcolor);
-    color: var(--success-alert-color);
+    background-color: var(--SUCCESS-ALERT-BGCOLOR);
+    color: var(--SUCCESS-ALERT-COLOR);
 }
 
 .alert-danger{
-    background-color: var(--danger-alert-bgcolor);
-    color: var(--danger-alert-color);
+    background-color: var(--DANGER-ALERT-BGCOLOR);
+    color: var(--DANGER-ALERT-COLOR);
 }
 
 .alert-warning{
-    background-color: var(--warning-alert-bgcolor);
-    color:var(--success-alert-color);
+    background-color: var(--WARNING-ALERT-BGCOLOR);
+    color:var(--WARNING-ALERT-COLOR);
 }
 
 .alert-info{
-    background-color: var(--info-alert-bgcolor);
-    color: var(--info-alert-color);
+    background-color: var(--INFO-ALERT-BGCOLOR);
+    color: var(--INFO-ALERT-COLOR);
 }
 
 .align-center{
