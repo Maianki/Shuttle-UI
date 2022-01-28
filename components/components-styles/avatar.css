@@ -1,0 +1,50 @@
+/*Large avatar --> 50px , medium avatar--> 36px, small avatar --> 28px and extra small avatar --->20px */
+:root{
+    --color-white:#FFF;
+    --color-img-background:#eeeeee;
+}
+
+.avatar{
+    width:10rem;
+    height:10rem;
+    border: 2px solid var(--white);
+    background-color: var(--color-img-background);
+}
+
+/*Variants of avatar*/
+.avatar-round{
+    border-radius: 50%;
+}
+
+.avatar-square{
+    border-radius: 5px;
+}
+
+.avatar-text{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Sizes of avatars*/
+
+.avatar-lg{
+    width: 12rem;
+    height: 12rem;
+}
+
+.avatar-md{
+    width: 9rem;
+    height: 9rem;
+}
+
+.avatar-sm{
+    width: 6rem;
+    height: 6rem;
+}
+
+.avatar-xs{
+    width: 3rem;
+    height: 3rem;
+}

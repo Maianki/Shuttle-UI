@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuttle UI | Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2352d5969b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main class="main-container">
+        <h1 class="title-sm">Alerts</h1>
+
+            <p class="description">Alert messages are great way to notify and catch user's attention about something special or importatnt.</p>
+
+            <h2>Simple Alert</h2>
+                <p class="description">There are six different types of alerts. Use class-name <span class="highlight">alert</span> and add another class-name for type of alert like <span class="highlight">alert-success</span> to give it more meaning.</p>
+
+            <section class="example-container">
+                <div class="alert alert-primary">
+                    <p>Example of a primary alert</p>
+                </div>
+            
+                <div class="alert alert-secondary">
+                    <p>Example of a secondary alert</p>
+                </div>
+            
+                <div class=" alert alert-success">
+                    <p>Example of a success alert</p>
+                </div>
+            
+                <div class="alert alert-danger">
+                    <p>Example of a danger alert</p>
+                </div>
+                
+                <div class="alert alert-warning">
+                    <p>Example of a warning alert</p>
+                </div>
+            
+                <div class="alert alert-info">
+                    <p>Example of an info alert</p>
+                </div>
+            </section>
+
+            <!--Alerts with Icons-->
+
+            <h2>Alerts with icon</h2>
+            <p class="description">Alert can have icon along with the text. Add <span class="highlight">align-center</span> utility class to align text and icon inside alert.</p>
+
+            <section class="example-container">
+                <div class="align-center alert alert-primary">
+                    <i class="md-ht-1 fas fa-bell"></i>
+                    <p>An example alert with an icon</p> 
+                </div>
+            
+                <div class="align-center alert alert-success">
+                    <i class="md-ht-1 fas fa-check-circle"></i>
+                    <p>Example of a success alert with icon</p>
+                </div>
+            
+                <div class="align-center alert alert-danger">
+                    <i class="md-ht-1 fas fa-exclamation-triangle"></i>
+                    <p>Example of a danger alert with icon</p>
+                </div>
+                
+                <div class="align-center alert alert-warning">
+                    <i class="md-ht-1 fas fa-exclamation-triangle"></i>
+                    <p>Example of a warning alert with icon</p>
+                </div>
+            </section>
+
+            <!-- Avatars -->
+            <h1>Avatar</h1>
+            <p class="description">
+                Avatars are images used as a profile picture. Avatars comes in different variants round, square and avatars with initial/text-avatars. Each variant comes in four different sizes. 
+            </p>
+
+            <!--Round avatar-->
+
+            <h2>Round avatars</h2>
+
+                <p class="description">To use round avatars add class-name <span class="highlight">avatar</span> and <span class="highlight">avatar-round.</span> And to adjust size you need to include <span class="highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span> class-name.</p>
+
+                <section class="example-container-align-horizontal">
+                    <div>
+                        <img src="./components/assets/avatar-girl.jpg" class="avatar avatar-round avatar-lg" alt="round large avatar image">
+                    </div>
+            
+                    <div>
+                        <img src="./components/assets/avatar-man.jpg" class="avatar avatar-round avatar-md" alt="round medium avatar image">
+                    </div>
+            
+                    <div>
+                        <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-round avatar-sm" alt="round small avatar image">
+                    </div>
+            
+                    <div>
+                        <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-round avatar-xs" alt="round extra small avatar image">
+                    </div>
+                </section>
+                
+            
+            <h2>Square avatars</h2>
+                <p class="description">To use square avatars add class-name <span class="highlight">avatar-square</span> along with class-name<span class="highlight"> avatar.</span> And to adjust size you need to include <span class="highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span> class-name.</p>
+                <section class="example-container-align-horizontal">
+                    <div>
+                        <img src="./components/assets/avatar-girl.jpg" class="avatar avatar-square avatar-lg" alt="square large avatar image">
+                    </div>
+            
+                    <div>
+                        <img src="./components/assets/avatar-man.jpg" class="avatar avatar-square avatar-md" alt="square medium avatar image">
+                    </div>
+            
+                    <div>
+                        <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-square avatar-sm" alt="square small avatar image">
+                    </div>
+            
+                    <div>
+                        <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-square avatar-xs" alt="square extra small avatar image">
+                    </div>
+                </section>
+                
+            <!--Avatars with initials-->
+                <h2>Avatars with initials/Text</h2>
+                    <p class="description">Avatars that display text or initials. To use text avatar include <span class="highlight">avatar-text</span> class-name along with <span class="highlight">avatar</span> And to adjust size you need to include <span class="highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span> class-name.</p>
+
+                    <section class="example-container-align-horizontal">
+                        <div class="avatar avatar-text avatar-round avatar-lg">
+                            AB
+                        </div>
+            
+                        <div class="avatar avatar-text avatar-round avatar-md">
+                            BW
+                        </div>
+            
+                        <div class="avatar avatar-text avatar-round avatar-sm">
+                            WE
+                        </div>
+            
+                        <div class="avatar avatar-text avatar-round avatar-xs">
+                            SR
+                        </div>
+                    </section>
+
+    </main>
+    
+</body>
+</html>

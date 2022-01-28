@@ -1,0 +1,55 @@
+:root{
+    --primary-alert-color:#1950a1;
+    --secondary-alert-color:#55595e;
+    --success-alert-color:#1e5c3f;
+    --danger-alert-color:#973e46;
+    --warning-alert-color:#a18d51;
+    --info-alert-color:#145d6c;
+    --primary-alert-bgcolor:#cfe2ff;
+    --secondary-alert-bgcolor:#e2e3e5;
+    --success-alert-bgcolor:#d1e7dd;
+    --danger-alert-bgcolor:#f8d7da;
+    --warning-alert-bgcolor:#fff3cd;
+    --info-alert-bgcolor:#cff4fc;
+}
+
+.alert{
+    font-size: 1.6rem;
+    padding:1.6rem;
+    margin: 1.6rem;
+}
+
+.alert-primary{
+    background-color: var(--primary-alert-bgcolor);
+    color: var(--primary-alert-color)
+}
+
+.alert-secondary{
+    background-color: var(--secondary-alert-bgcolor);
+    color: var(--secondary-alert-color)
+}
+
+.alert-success{
+    background-color: var(--success-alert-bgcolor);
+    color: var(--success-alert-color);
+}
+
+.alert-danger{
+    background-color: var(--danger-alert-bgcolor);
+    color: var(--danger-alert-color);
+}
+
+.alert-warning{
+    background-color: var(--warning-alert-bgcolor);
+    color:var(--success-alert-color);
+}
+
+.alert-info{
+    background-color: var(--info-alert-bgcolor);
+    color: var(--info-alert-color);
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}

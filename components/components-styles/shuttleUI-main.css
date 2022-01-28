@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('reset.css');
+@import url('utilities.css');
+@import url('alert.css');
+@import url('avatar.css');
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
