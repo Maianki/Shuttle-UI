@@ -1,0 +1,33 @@
+:root{
+    --BORDER-COLOR:#eeeeee;
+    --TEXT-HIGHLIGHT-COLOR:#9a94a1;
+}
+
+.example-container{
+    display: flex;
+    flex-direction: column;
+    width : 70vw;
+    height:auto;
+    border: 2px solid var(--BORDER-COLOR);
+    margin: 1rem;
+}
+
+.example-container-align-horizontal{
+    display: flex;
+    width : 70vw;
+    height:auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid var(--BORDER-COLOR);
+    padding: 1.6rem;
+    margin:1rem;
+}
+
+.description{
+    margin: 1rem;
+}
+
+.highlight{
+    color: var(--TEXT-HIGHLIGHT-COLOR);
+}
