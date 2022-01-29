@@ -3,6 +3,8 @@
 @import url('utilities.css');
 @import url('alert.css');
 @import url('avatar.css');
+@import url('badge.css');
+@import url('buttons.css');
 
 html{
     font-family: 'Roboto', sans-serif;
