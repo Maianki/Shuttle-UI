@@ -82,3 +82,9 @@ p{
 .pd-ht-2 {
     padding: 0 2rem;
 }
+
+.align-items-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

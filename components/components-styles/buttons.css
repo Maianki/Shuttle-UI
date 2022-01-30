@@ -81,9 +81,6 @@
     background-color:var(--PRIMARY-BTN-COLOR);
     border-radius: 50%;
     font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: transform .4s;
  }
 
