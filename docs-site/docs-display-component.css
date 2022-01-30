@@ -10,6 +10,7 @@
     height:auto;
     border: 2px solid var(--BORDER-COLOR);
     margin: 1rem;
+    padding: 1rem;
 }
 
 .example-container-align-horizontal{

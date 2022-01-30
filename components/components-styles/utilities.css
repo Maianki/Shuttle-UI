@@ -6,7 +6,27 @@ h1{
 }
 
 h2{
-    font-size:2.6rem;
+    font-size:2.4rem;
+    margin: 1rem;
+}
+
+h3{
+    font-size: 1.87rem;
+    margin: 1rem;
+}
+
+h4{
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+h5{
+    font-size: 1.328rem;
+    margin: 1rem;
+}
+
+h6{
+    font-size: 1.072rem;
     margin: 1rem;
 }
 
@@ -61,4 +81,10 @@ p{
   
 .pd-ht-2 {
     padding: 0 2rem;
+}
+
+.align-items-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
