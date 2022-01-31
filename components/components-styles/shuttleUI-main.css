@@ -5,6 +5,7 @@
 @import url('avatar.css');
 @import url('badge.css');
 @import url('buttons.css');
+@import url('card.css');
 
 html{
     font-family: 'Roboto', sans-serif;

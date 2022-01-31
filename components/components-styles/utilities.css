@@ -88,3 +88,15 @@ p{
     justify-content: center;
     align-items: center;
 }
+
+.align-text-center{
+    text-align: center;
+}
+
+.align-text-left{
+    text-align: left;
+}
+
+.align-text-right{
+    text-align: right;
+}

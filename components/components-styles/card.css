@@ -1,0 +1,156 @@
+:root{
+    --WHITE-COLOR:#FFF;
+    --MYRTEL-GREEN-COLOR: #307473;
+    --DEFAULT-CARD-SHADOW-1: rgba(0,0,0,0.16);
+    --DEFAULT-CARD-SHADOW-2: rgba(0,0,0,0.23);
+    --CARD-HOVER-SHADOW-1:rgba(0,0,0,0.12);
+    --CARD-HOVER-SHADOW-2:rgba(0,0,0,0.24);
+    --ALTRNATE-CARD-SHADOW-1:rgba(0,0,0,0.30);
+    --ALTRNATE-CARD-SHADOW-2:rgba(0,0,0,0.22);
+}
+
+/*Common classes for cards*/
+.card{
+    position: relative;
+    width:30rem;
+    padding:1rem;
+    background-color: var(--WHITE-COLOR);
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: 0 3px 6px var(--DEFAULT-CARD-SHADOW-1), 0 3px 6px var(--DEFAULT-CARD-SHADOW-2);
+    margin: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0 1px 3px var(--CARD-HOVER-SHADOW-1), 0 1px 2px var(--CARD-HOVER-SHADOW-2);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+.card-img{
+    width: 100%;
+    height: 30rem;
+    border-radius: 4px;
+}
+
+.original-price{
+    text-decoration: line-through;
+}
+
+.card-discount{
+    color: var(--SUCCESS-ALERT-COLOR);
+    font-size: 1.2rem;
+}
+
+.card-btn{
+    border-radius: 0;
+    margin:0;
+    margin-top:4rem;
+    width: 100%;
+}
+
+.card-header{
+    position: relative;
+}
+
+.card-body{
+    margin-top: .5rem;
+    align-self: flex-start;
+}
+
+.card-badge{
+    position: absolute;
+    left:-8px;
+    top: 8px;
+    font-size: 1.2rem;
+    border-radius: 0;
+}
+
+.card-footer{
+    align-self: stretch;
+}
+
+.card-description{
+    margin: 2rem 0 .5rem 1rem;
+    color: var(--MYRTEL-GREEN-COLOR) ;
+}
+
+/*Card horizontal classes*/
+
+.card-horizontal{
+    width: 45rem;
+    flex-direction: row;
+}
+
+.horizontal-card{
+    width: 50rem;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card-horizontal-img{
+    height: 18rem;
+}
+
+.card-horizontal-btn{
+    border-radius: 0;
+    margin:.5rem;
+    width: 100%;
+}
+
+.card-horizontal-footer{
+    margin-top: 1.5rem;
+}
+
+/*Card with dissmiss classes*/
+
+.card-dismiss{
+    padding: 1rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--BADGE-TEXT-COLOR);
+}
+
+.card-dismiss:hover{
+    transform: scale(1.2);
+}
+
+/*CARD WITH TEXT OVERLAY*/
+
+.card-overlay{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 3rem;
+    z-index: 2;
+    color: var(--WHITE-COLOR);
+    background-color: var(--SECONDARY-ALERT-COLOR);
+    opacity: .4;
+    border-radius: 5px;
+}
+
+.card-overlay-img{
+  height: 100%;
+}
+
+.card-overlay-text{
+    width: 100%;
+    font-size: 3rem;
+    z-index: 2;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    margin: 0;
+    border-radius: 0;
+    text-align: center;
+}
+
+/*Clas to add alternate shadow to cards*/
+  
+  .card-shadow-alternate {
+    box-shadow: 0 19px 38px var(--ALTRNATE-CARD-SHADOW-1), 0 15px 12px var(--ALTRNATE-CARD-SHADOW-2);
+  }
+  

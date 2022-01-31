@@ -284,6 +284,165 @@
             <button class="btn btn-fab align-items-center"> + </div>
         </section>
 
+        <!--Cards-->
+        <h1>Cards</h1>
+
+        <p class="description">A card is a container in itself having a header, body and footer.</p>
+
+        <h2>Cards with Badges</h2>
+        <p class="description">All cards follow same template in shuttle UI. To make a card use class-name <span class="highlight">card</span> in your main container. Cards with badge use badge component to add a badge on top of the image. Copy the below code snippet, put text and image of your own and you are good to go.</p>
+
+        <section class="example-container-align-horizontal">
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./components/assets/shuttles.jpg" alt="">
+                    <span class="card-badge badge">Trending</span>
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./components/assets/racquet-shuttle.jpg" alt="">
+                    <span class="card-badge badge">Sale</span>
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Racquet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.1,349 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1925 </span> (30% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Horizontal cards-->
+        <h2>Horizontal Cards</h2>
+        <p class="description">Horizontal cards are there to add diversity in card components. They come up with two button elements.  Use class-name <span class="highlight">card-horizontal</span> along with <span class="highlight">card in main container</span>. And add <span class="highlight">card-horizontal-img</span> class-name in image element. Copy the below code-snippet to use card component in your project.</p>
+
+        <section class="example-container">    
+
+             <div class="card align-items-center card-horizontal">
+                <div class="card-header">
+                    <img class="card-img card-horizontal-img" src="./components/assets/shuttles.jpg" alt="">
+                    <span class="card-badge badge">Sale</span>
+                </div>
+                <div class="md-ht-1 card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="md-ht-1">Rs.1,349 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1925 </span> (30% OFF)</span> </p>
+                    <div class="card-horizontal-footer">
+                        <button class="card-horizontal-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
+                        <button class="card-horizontal-btn btn btn-outline-primary"><i class="fas fa-heart"></i><span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!--Cards with dismiss-->
+        <h2>Cards with Dismiss</h2>
+        <p class="description"> Card with dismiss comes with a cross button on right side of the card. To add dismiss you would have to add font-awesome icon and give it a class-name of  <span class="highlight">card-dismiss</span>. Copy the below-code snippet to use cards with dismiss.</p>
+
+        <section class="example-container-align-horizontal">
+            <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
+                    <span><i class="card-dismiss fas fa-times"></i></span>
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+        </section>
+
+         <!--Cards with Text Overlay-->
+         <h2>Cards with Overlay</h2>
+         <p class="description"> To use card with overlay copy the below code-snippet and use class-name as given. </p>
+ 
+         <section class="example-container-align-horizontal">
+             <div class="card align-items-center">
+                 <div class="card-overlay align-items-center">SOLD OUT</div>
+                 <div class="card-header">
+                     <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
+                 </div>
+                 <div class="card-body">
+                     <h3>Yonex Feather Shuttle</h3>
+                     <p class="card-description">Currently out of stock</p>
+                     <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+                 </div>
+                 <div class="card-footer">
+                     <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
+                 </div>
+             </div>
+
+             <!--Second card with overlay-->
+             <div class="card align-items-center">
+                <div class="card-header">
+                    <img class="card-img" src="./components/assets/smash badminton.jpg" alt="">
+                </div>
+                <div class="card-body card-overlay-text btn btn-primary">
+                    New Arrival
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+         </section>
+
+          <!--Text only cards-->
+        <h2>Text only Cards</h2>
+        <p class="description">Text only cards are the simplest cards available. You can align-text in the body using utility classes like <span class="highlight">align-text-left, align-text-center and align-text-right</span>. You can also add buttons in text only cards by adding button components at the footer of the card.</p>
+
+        <section class="example-container-align-horizontal">
+            <div class="card align-items-center">
+                <div class="card-header align-text-left">
+                   <h3>Card Title</h3>
+                </div>
+                <div class="card-body align-text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam sint, cum illo quasi autem quas eum exercitationem fugiat eligendi!</p>
+                </div>
+                <div class="card-footer align-items-center">
+                    <button class="btn btn-primary" role="button">Yes</button>
+                    <button class="btn btn-outline-primary">No</button>
+                </div>
+            </div>
+        </section>
+
+          <!--Cards with shadow-->
+          <h2>Card With shadow</h2>
+          <p class="description"> Although all cards in Shuttle UI comes with shadow but you can use alternate shadow using class-name <span class="highlight">card-shadow-alternate</span> in the main container.</p>
+  
+          <section class="example-container-align-horizontal">
+            <div class="card align-items-center card-shadow-alternate">
+                <div class="card-header">
+                    <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <h3>Yonex Feather Shuttle</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
+                </div>
+                <div class="card-footer">
+                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
+                </div>
+            </div>
+
+          </section>
+
     </main>
 
 </body>
