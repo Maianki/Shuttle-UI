@@ -1,0 +1,63 @@
+.form-label{
+    display: block;
+    font-size: 1.6rem;
+}
+
+.form-set{
+    margin: 1.5rem 0;
+}
+
+.form-input{
+    width: 100%;
+    margin:.5rem 0;
+}
+
+.form-input-lg{
+    height: 4rem;
+}
+
+.form-input-md{
+    height: 3rem;
+}
+
+.form-btn{
+    margin-left:0;
+}
+
+input:focus{
+    border: 3px solid var( --PRIMARY-BTN-COLOR );
+}
+
+/*CLASSES FOR CHECKBOXES AND RADIO BUTTONS*/
+.form-check{
+    display: flex;
+    align-items: center;
+}
+
+.form-label-inline{
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 0 1rem;
+}
+
+/*CLASSES FOR CUSTOM FORM VALIDATION AND STYLING*/
+.form-validation-msg{
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 21px;
+    display: none;
+}
+
+.form-error-msg{
+    color: var(--DANGER-ALERT-COLOR);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.form-input-error{
+    border: 3px solid var(--DANGER-ALERT-COLOR);
+}
+
+.form-input-success{
+    border: 3px solid var(--SUCCESS-BTN-COLOR);
+}

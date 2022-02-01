@@ -1,0 +1,24 @@
+.responsive-img{
+    max-width: 100%;
+    height: auto;
+  }
+
+.round-img{
+    border-radius: 50%;
+}
+
+.round-sm{
+    width: 6rem;
+    height: 6rem;
+}
+
+.round-lg{
+    width: 12rem;
+    height: 12rem;
+}
+
+.round-md{
+    width: 9rem;
+    height: 9rem;
+}
+
