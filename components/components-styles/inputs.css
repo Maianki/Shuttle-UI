@@ -41,12 +41,6 @@ input:focus{
 }
 
 /*CLASSES FOR CUSTOM FORM VALIDATION AND STYLING*/
-.form-validation-msg{
-    margin-top: 0.25rem;
-    font-size: 0.875rem;
-    line-height: 21px;
-    display: none;
-}
 
 .form-error-msg{
     color: var(--DANGER-ALERT-COLOR);
