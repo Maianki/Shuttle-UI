@@ -443,7 +443,166 @@
 
           </section>
 
+          <!--Images-->
+          <h1>Images</h1>
+
+          <p class="description">Images are made responsive so that it takes width of the enclosed container.</p>
+  
+          <h2>Responsive images</h2>
+          <p class="description">To make images responsive add class <span class="highlight">responsive-img</span> in the img tag. If you are using picture tag make sure you add the <span class="highlight">responsive-img</span> class in img element and not on picture element. <span class="highlight">Resize the screen to see the responsiveness of image</span>. </p>
+  
+          <section class="example-container-align-horizontal">
+              <picture>
+                <source srcset="./components/assets/mobile.jpg" media="(max-width: 400px)">
+                <source srcset="./components/assets/web.jpg" >
+                <img class="responsive-img" src="./components/assets/web.jpg" alt="responsive img example">
+              </picture> 
+                   
+          </section>
+
+          <h2>Round images</h2>
+          <p class="description"> You can make images round by adding <span class="highlight">round-img</span> class to img tag. Round images comes in three different sizes. Add <span class="highlight">round-lg, round-md round-sm</span> classes to set size on round images.</p>
+  
+          <section class="example-container-align-horizontal">
+              <img class="round-img round-lg" src="./components/assets/avatar-badminton.jpg" alt="">  
+              <img class="round-img round-md" src="./components/assets/avatar-badminton.jpg" alt="">   
+              <img class="round-img round-sm" src="./components/assets/avatar-badminton.jpg" alt="">      
+          </section>
+
+           <!--Inputs-->
+           <h1>Inputs</h1>
+
+           <p class="description">Inputs are most important components of any webpage. Inputs are very helpful in getting information from user.</p>
+   
+           <h2>Textbox</h2>
+           <p class="description">Text input fields are typically used to take data such as firstname, lastname, fullname and feedback/comment. You can change size of the input box using <span class="highlight">form-input-lg and form-input-md</span> along with <span class="highlight">form-input</span> class.</p>
+   
+           <section class="example-container">
+                <form action="">
+
+                    <div class="form-set">
+                        <label class="form-label" for="fname">First Name:</label>
+                        <input class="form-input form-input-lg pd-1" type="text" id="fname" name="fname">
+                    </div>
+                    
+                    <div class="form-set">
+                        <label class="form-label" for="lname">Last Name:</label>
+                        <input class="form-input form-input-lg pd-1" type="text" id="lname" name="lname">
+                    </div>
+
+                    <div class="form-set">
+                        <label class="form-label" for="fullname">Full Name:</label>
+                        <input class="form-input form-input-lg pd-1" type="text" id="fullname" name="fullname">
+                    </div>
+
+                    <div class="form-set">
+                        <label class="form-label" for="feedback-box">Send Feedbacks:</label>
+                        <textarea class="form-input pd-1" name="feedback" id="feedback-box" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                </form>
+           </section>
+
+           <h2>Checkbox, radio and select inputs</h2>
+           <p class="description">Add class <span class="highlight">form-check</span> in parent container to align checkboxes and radio with their respective labels.</p>
+   
+           <section class="example-container">
+                <form action="#">
+                    <div class="form-check">
+                        <input type="checkbox" value="demo" id="examplecheck">
+                        <label class="form-label-inline" for="examplecheck"> Example checkbox</label>   
+                    </div>
+                    
+                    <div class="form-check md-vt-1">
+                        <input class="form-check-input" type="radio" name="exampleradio" id="exampleradio" value="option1" checked>
+                        <label class="form-label-inline" for="exampleradio">Example radio</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleradio" id="exampleradio2" value="option2" checked>
+                        <label class="form-label-inline" for="exampleradio2">Example radio 2</label>
+                    </div>
+
+                    <div class="form-set">
+                        <label class="form-label" for="exampleselect">Example select</label>
+                        <select class="form-input form-input-lg pd-1" id="exampleselect">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        </select>
+                    </div>
+                    
+                </form>
+           </section>
+
+           <h2>Inputs with default validation</h2>
+           <p class="description">You can add default validation in form by adding required attribute in input fields. If you are adding default validation make sure you use appropriate type. <span class="highlight">For e.g</span> for email use <span class="highlight">type="email"</span>.</p>
+   
+           <section class="example-container">
+                <form action="#">
+                    <div class="form-set">
+                        <label class="form-label" for="fname">First Name:</label>
+                        <input class="form-input form-input-lg pd-1" type="text" id="fname" name="fname" required>
+                    </div>
+                    
+                    <div class="form-set">
+                        <label class="form-label" for="lname">Last Name:</label>
+                        <input class="form-input form-input-lg pd-1" type="text" id="lname" name="lname" required>
+                    </div>
+
+                    <div class="form-set">
+                        <label class="form-input form-label" for="email">Email:</label>
+                        <input class="form-input form-input-lg pd-1" type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-set">
+                        <label class="form-label" for="password">Password:</label>
+                        <input class="form-input form-input-lg pd-1" type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <input type="submit" class="btn btn-primary form-btn" value="Sign In" role="button">
+                    
+                </form>
+           </section>
+
+           <h2>Input with custom validation and error style</h2>
+           <p class="description">Shuttle UI comes with custom validation and error styling on form fields. To add custom validation add <span class="highlight">no-validate</span> boolean attribute in form tag and use class <span class="highlight">form-validation</span>. Make sure to add Shuttle UI JS script if you are using custom validation. Copy the below code snipppet to add custom validation in form fields.
+           <section class="example-container">
+            <form class="form-validation" action="#" novalidate>
+                <div class="form-set">
+                    <label class="form-label" for="fname">Username:</label>
+                    <input class="form-input form-input-lg pd-1" type="text" id="username" name="username">
+                    <div class="form-error-msg"></div>
+                </div>
+
+                <div class="form-set">
+                    <label class="form-label" for="user-email">Email:</label>
+                    <input class="form-input form-input-lg pd-1" type="email" id="user-email" name="email">
+                    <div class="form-error-msg"></div>
+                </div>
+
+                <div class="form-set">
+                    <label class="form-label" for="user-password">Password:</label>
+                    <input class="form-input form-input-lg pd-1" type="password" id="user-password" name="password">
+                    <div class="form-error-msg"></div>
+                </div>
+
+                <div class="form-set">
+                    <label class="form-label" for="user-password-2">Confirm Password:</label>
+                    <input class="form-input form-input-lg pd-1" type="password" id="user-password-2" name="password-2">
+                    <div class="form-error-msg"></div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary form-btn">Sign Up</button>
+                
+            </form>
+       </section>
+
     </main>
+
+    <script src="./components/componentsJS/shuttleui-script.js"></script>
 
 </body>
 
