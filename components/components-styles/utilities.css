@@ -83,12 +83,6 @@ p{
     padding: 0 2rem;
 }
 
-.align-items-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .align-text-center{
     text-align: center;
 }
@@ -99,4 +93,21 @@ p{
 
 .align-text-right{
     text-align: right;
+}
+
+/*FLEX UTILITY CLASSES*/
+
+.align-items-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }

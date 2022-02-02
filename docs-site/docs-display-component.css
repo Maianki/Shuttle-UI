@@ -1,6 +1,10 @@
 :root{
     --BORDER-COLOR:#eeeeee;
     --TEXT-HIGHLIGHT-COLOR:#9a94a1;
+    --PRIMARY-COLOR: #4B4453;
+    --SECONDARY-COLOR: #9a94a1;
+    --BLACK-COLOR:#000;
+    --WHITE-COLOR:#FFF;
 }
 
 .example-container{
