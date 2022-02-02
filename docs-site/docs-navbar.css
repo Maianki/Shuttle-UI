@@ -1,0 +1,40 @@
+.nav-container{
+    width: 100vw;
+    height: 10rem;
+    background-color: var(--PRIMARY-COLOR);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8vw;
+    border-radius: 0 0 45% 0;
+}
+
+.site-logo{
+    height:5rem;
+    width: 25rem;
+}
+
+.nav-link{
+    color: var(--WHITE-COLOR);
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    transition: all .4s ease;
+    border-radius:5px;
+}
+
+.nav-link:hover {
+    background: var(--WHITE-COLOR);
+    color:var(--BLACK-COLOR);
+}
+
+footer{
+    width: 100vw;
+    height: 8.5rem;
+    background-color: var(--PRIMARY-COLOR);
+    border-radius: 50% 0 0 0;
+}
+
+.footer-description{
+    font-size: 1.6rem;
+    color: var(--WHITE-COLOR);
+    text-align: center;
+}
