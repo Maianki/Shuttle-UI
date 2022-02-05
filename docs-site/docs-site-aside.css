@@ -1,0 +1,40 @@
+.sidenav-nav{
+    width:35rem;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding:12.5rem 1rem 1rem;
+    font-size:2rem;
+    line-height: 3.5rem;
+    color: var(--PRIMARY-COLOR);
+    max-height:100vh;
+    height: 100%;
+    box-shadow: 0 3px 6px var(--DEFAULT-CARD-SHADOW-1), 0 3px 6px var(--DEFAULT-CARD-SHADOW-2);
+}
+
+.sidenav-heading{
+  color: var(--BLACK-COLOR);
+  font-size: 2.2rem;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.sidenav-item{
+  display:flex;
+  align-items:center;
+  padding: .5rem 10rem;
+  border-radius: 5px;
+}
+
+.sidenav-link{
+  color: var(--PRIMARY-COLOR);
+  width: 100%;
+  transition: all .3s ease;
+  padding-left: 2rem;
+}
+
+.sidenav-item:hover{
+  background-color: var(--GREY-COLOR);
+  color: var(--BLACK-COLOR);
+}
+

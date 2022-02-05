@@ -7,7 +7,7 @@
 .avatar{
     width:10rem;
     height:10rem;
-    background-color: var(--IMG-BGCOLOR);
+    background-color: var(--PRIMARY-COLOR);
 }
 
 /*Variants of avatar*/
@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--WHITE-COLOR);
 }
 
 /*Sizes of avatars*/
