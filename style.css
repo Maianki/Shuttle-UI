@@ -4,7 +4,12 @@
 @import url('./docs-site/docs-display-component.css');
 @import url('./docs-site/docs-navbar.css');
 @import url('./docs-site/docs-landing-page.css');
+@import url('./docs-site/docs-site-aside.css');
+@import url('./docs-site/docs-layout.css');
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     display: flex;
     flex-direction: column;

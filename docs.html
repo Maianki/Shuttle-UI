@@ -7,15 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shuttle UI | Documentation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
     <script src="https://kit.fontawesome.com/2352d5969b.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-    <main class="main-container">
-        <h1>Alerts</h1>
+    <nav class="nav-container flex-row ">
+        <a class="navbar-brand flex-row" href="#">
+            <i class="btn-hamburger fas fa-bars"></i>
+            <img class="site-logo" src="./docs-site/assets/logo.png" alt="logo">
+        </a>
 
-        <p class="description">Alert messages are great way to notify and catch user's attention about something special
+        <ul class="flex-row">
+            <li>
+                <a class="nav-link md-ht-1" href="docs.html"><i class="fab fa-dochub"></i>ocumentation</a>
+            </li>
+            <li>
+                <a class="nav-link md-ht-1" href="https://github.com/Maianki/Shuttle-UI"><i
+                        class="fab fa-github-square"></i> Github</a>
+            </li>
+            <li>
+                <a class="nav-link md-ht-1"><i class="fas fa-moon"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <aside class="sidenav">
+        <ul class="sidenav-nav">
+            <li class="sidenav-heading sidenav-item">Get Started</li>
+            <li class="sidenav-item" ><a class="sidenav-link" href="#Getting-started">Installation</a></li>
+            <hr class="sidenav-hr">
+            <li class="sidenav-heading sidenav-item ">Components</li>
+            <li class="sidenav-item" ><a class="sidenav-link" href="#Alerts">Alert</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Avatar">Avatar</a>
+            </li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Badge">Badge</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Button">Button</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Cards">Card</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Image">Image</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Input">Input</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-container">
+
+        <section id="Getting-started">
+            <h1 class="md-btm-2 component-heading">Get Started</h1>
+            <h2 class="md-1">Introduction</h2>
+            <p class="intro-text">Shuttle UI is easy to use modern CSS component library to help you build elegant
+                looking webpages with shuttle speed.</p>
+            <h2 class="md-1">Installation</h2>
+            <p class="description">To get started with Shuttle UI you need to include it's CSS inside head of your HTML
+                file.</p>
+            <section class="code-container">
+                <pre>
+                    <code class="html">
+                        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css&quot;&gt;
+                    </code>
+                </pre>
+            </section>
+        </section>
+
+        <h2 class="md-1">Starter Template</h2>
+        <p class="description">Make sure you have linked the files properly in your webpage. Follow the example below on
+            how to import Shuttle UI into your webpage.</p>
+        <section class="code-container">
+            <pre>
+                    <code class="html">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;!--Import shuttleUI-main.css--&gt;
+                            &lt;link rel=&quot;stylesheet&quot; href=&quot;https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css&quot;&gt;
+
+                            &lt;!--Let browser know website is optimized for mobile--&gt;
+                            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
+                            &lt;/head&gt;
+
+                            &lt;body&gt;
+                                &lt;!--Shuttle ui uses font-awesome 5 for icons so make sure to install it as well 
+                                if you are using components that involves icons--&gt;
+                                &lt;script src=&quot;https://kit.fontawesome.com/2352d5969b.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
+        </section>
+        </section>
+
+        <hr>
+
+        <h1 id="Alerts" class="component-heading">Alerts</h1>
+
+        <p class="intro-text">Alert messages are great way to notify and catch user's attention about something special
             or importatnt.</p>
 
         <h2>Simple Alert</h2>
@@ -49,6 +136,36 @@
             </div>
         </section>
 
+        <section class="code-container">
+            <pre>
+                <code class="hjs html">
+                        &lt;div class=&quot;alert alert-primary&quot;&gt;
+                            &lt;p&gt;Example of a primary alert&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot;alert alert-secondary&quot;&gt;
+                            &lt;p&gt;Example of a secondary alert&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot; alert alert-success&quot;&gt;
+                            &lt;p&gt;Example of a success alert&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot;alert alert-danger&quot;&gt;
+                            &lt;p&gt;Example of a danger alert&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot;alert alert-warning&quot;&gt;
+                            &lt;p&gt;Example of a warning alert&lt;/p&gt;
+                        &lt;/div&gt;
+            
+                        &lt;div class=&quot;alert alert-info&quot;&gt;
+                            &lt;p&gt;Example of an info alert&lt;/p&gt;
+                        &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
         <!--Alerts with Icons-->
 
         <h2>Alerts with icon</h2>
@@ -77,9 +194,36 @@
             </div>
         </section>
 
+        <section class="code-container">
+            <pre>
+                <code class="hjs html">
+                    &lt;div class=&quot;align-center alert alert-primary&quot;&gt;
+                        &lt;i class=&quot;md-ht-1 fas fa-bell&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt;An example alert with an icon&lt;/p&gt;
+                    &lt;/div&gt;
+        
+                    &lt;div class=&quot;align-center alert alert-success&quot;&gt;
+                        &lt;i class=&quot;md-ht-1 fas fa-check-circle&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt;Example of a success alert with icon&lt;/p&gt;
+                    &lt;/div&gt;
+        
+                    &lt;div class=&quot;align-center alert alert-danger&quot;&gt;
+                        &lt;i class=&quot;md-ht-1 fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt;Example of a danger alert with icon&lt;/p&gt;
+                    &lt;/div&gt;
+        
+                    &lt;div class=&quot;align-center alert alert-warning&quot;&gt;
+                        &lt;i class=&quot;md-ht-1 fas fa-exclamation-triangle&quot;&gt;&lt;/i&gt;
+                        &lt;p&gt;Example of a warning alert with icon&lt;/p&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+        <hr>
         <!-- Avatars -->
-        <h1>Avatar</h1>
-        <p class="description">
+        <h1 class="component-heading" id="Avatar">Avatar</h1>
+        <p class="intro-text">
             Avatars are images used as a profile picture. Avatars comes in different variants round, square and avatars
             with initial/text-avatars. Each variant comes in four different sizes.
         </p>
@@ -114,6 +258,32 @@
             </div>
         </section>
 
+        <section class="code-container">
+            <pre>
+                <code class="hjs html">
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-girl.jpg&quot; class=&quot;avatar avatar-round avatar-lg&quot;
+                            alt=&quot;round large avatar image&quot;&gt;
+                    &lt;/div&gt;
+
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-man.jpg&quot; class=&quot;avatar avatar-round avatar-md&quot;
+                            alt=&quot;round medium avatar image&quot;&gt;
+                    &lt;/div&gt;
+
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-badminton.jpg&quot; class=&quot;avatar avatar-round avatar-sm&quot;
+                            alt=&quot;round small avatar image&quot;&gt;
+                    &lt;/div&gt;
+
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-badminton.jpg&quot; class=&quot;avatar avatar-round avatar-xs&quot;
+                            alt=&quot;round extra small avatar image&quot;&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+
+        </section>
 
         <h2>Square avatars</h2>
         <p class="description">To use square avatars add class-name <span class="highlight">avatar-square</span> along
@@ -141,6 +311,32 @@
             </div>
         </section>
 
+        <section class="code-container">
+            <pre>
+                <code class="hjs html">
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-girl.jpg&quot; class=&quot;avatar avatar-square avatar-lg&quot;
+                            alt=&quot;square large avatar image&quot;&gt;
+                    &lt;/div&gt;
+
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-man.jpg&quot; class=&quot;avatar avatar-square avatar-md&quot;
+                            alt=&quot;square medium avatar image&quot;&gt;
+                    &lt;/div&gt;
+
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-badminton.jpg&quot; class=&quot;avatar avatar-square avatar-sm&quot;
+                            alt=&quot;square small avatar image&quot;&gt;
+                    &lt;/div&gt;
+
+                    &lt;div&gt;
+                        &lt;img src=&quot;./components/assets/avatar-badminton.jpg&quot; class=&quot;avatar avatar-square avatar-xs&quot;
+                            alt=&quot;square extra small avatar image&quot;&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
         <!--Avatars with initials-->
         <h2>Avatars with initials/Text</h2>
         <p class="description">Avatars that display text or initials. To use text avatar include <span
@@ -166,14 +362,39 @@
             </div>
         </section>
 
-        <!--Badges-->
-        <h1>Badges</h1>
+        <section class="code-container">
+            <pre>
+                <code class="hjs html">
+                    &lt;div class=&quot;avatar avatar-text avatar-round avatar-lg&quot;&gt;
+                        AB
+                    &lt;/div&gt;
 
-        <p class="description">Badges are generally used on top right corner to show notification or bottom right corner to show online/offline status.</p>
+                    &lt;div class=&quot;avatar avatar-text avatar-round avatar-md&quot;&gt;
+                        BW
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;avatar avatar-text avatar-round avatar-sm&quot;&gt;
+                        WE
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;avatar avatar-text avatar-round avatar-xs&quot;&gt;
+                        SR
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+        <hr>
+        <!--Badges-->
+        <h1 id="Badge" class="component-heading">Badges</h1>
+
+        <p class="intro-text">Badges are generally used on top right corner to show notification or bottom right corner
+            to show online/offline status.</p>
 
         <h2>Badges on text</h2>
 
-        <p class="description">Text badge will resize themselves as per the size of the text. To use badge on text add class-name <span class="highlight"> badge</span>.</p>
+        <p class="description">Text badge will resize themselves as per the size of the text. To use badge on text add
+            class-name <span class="highlight"> badge</span>.</p>
         <section class="example-container">
             <h1>Badge on heading 1 <span class="badge">New</span></h1>
             <h2>Badge on heading 2 <span class="badge">New</span></h2>
@@ -183,308 +404,665 @@
             <p class="md-1">Badge on normal text <span class="badge">New</span></p>
         </section>
 
+        <section class="code-container">
+            <pre>
+                <code class="hjs html">
+                    &lt;h1&gt;Badge on heading 1 &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/h1&gt;
+                    &lt;h2&gt;Badge on heading 2 &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/h2&gt;
+                    &lt;h3&gt;Badge on heading 3 &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/h3&gt;
+                    &lt;h4&gt;Badge on heading 4 &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/h4&gt;
+                    &lt;h5&gt;Badge on heading 5 &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/h5&gt;
+                    &lt;p class=&quot;md-1&quot;&gt;Badge on normal text &lt;span class=&quot;badge&quot;&gt;New&lt;/span&gt;&lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+
         <h2>Badges on icons</h2>
 
-        <p class="description">Badge can be used with icons such as notification bell or shopping cart. To add icon on badge use <span class="highlight"> badge-container</span> class-name on parent container/element. And use <span class="highlight"> badge</span> along with <span class="highlight"> badge-icon</span> class-name on badge element.</p>
+        <p class="description">Badge can be used with icons such as notification bell or shopping cart. To add icon on
+            badge use <span class="highlight"> badge-container</span> class-name on parent container/element. And use
+            <span class="highlight"> badge</span> along with <span class="highlight"> badge-icon</span> class-name on
+            badge element.</p>
         <section class="example-container-align-horizontal">
-           <div><i class="badge-container fas fa-bell fa-3x"><span class="badge badge-icon">5</span></i></div>
-           <div><i class="badge-container fas fa-shopping-cart fa-3x"><span class="badge badge-icon">5</span></i></div>
-           <div><i class="badge-container fas fa-envelope fa-3x"><span class="badge badge-icon">5</span></i></div>
+            <div><i class="badge-container fas fa-bell fa-3x"><span class="badge badge-icon">5</span></i></div>
+            <div><i class="badge-container fas fa-shopping-cart fa-3x"><span class="badge badge-icon">5</span></i></div>
+            <div><i class="badge-container fas fa-envelope fa-3x"><span class="badge badge-icon">5</span></i></div>
         </section>
 
-        <h2>Badges on Avatars</h2>
+        <section class="code-container">
+            <pre>
+                <code class="hjs html">
+                    &lt;div&gt;&lt;i class=&quot;badge-container fas fa-bell fa-3x&quot;&gt;&lt;span class=&quot;badge badge-icon&quot;&gt;5&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;i class=&quot;badge-container fas fa-shopping-cart fa-3x&quot;&gt;&lt;span class=&quot;badge badge-icon&quot;&gt;5&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;
+                    &lt;div&gt;&lt;i class=&quot;badge-container fas fa-envelope fa-3x&quot;&gt;&lt;span class=&quot;badge badge-icon&quot;&gt;5&lt;/span&gt;&lt;/i&gt;&lt;/div&gt;
+                </code>
+            </pre>
 
-        <p class="description">Badges on avatars are used to show online/offline status. Use class-name <span class="highlight">badge-container</span> on parent container/element. And use <span class="highlight"> badge-online, badge-offline, badge-dnd or badge-last-seen</span> along with class-name <span class="highlight"> badge </span> on the element as per need.</p>
-        <section class="example-container-align-horizontal">
-            <div class="badge-container">
-                <img src="./components/assets/avatar-girl.jpg" class=" avatar avatar-round avatar-lg"
-                    alt="round large avatar image"> <span class="badge badge-online"></span>
-            </div>
+            <h2>Badges on Avatars</h2>
 
-            <div class="badge-container">
-                <img src="./components/assets/avatar-man.jpg" class="avatar avatar-round avatar-md"
-                    alt="round medium avatar image"> <span class="badge badge-online badge-dnd"></span>
-            </div>
-
-            <div class="badge-container">
-                <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-round avatar-sm"
-                    alt="round small avatar image"> <span class="badge badge-offline"></span>
-            </div>
-
-            <div class="badge-container">
-                <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-round avatar-xs"
-                    alt="round extra small avatar image"> <span class="badge badge-last-seen">2m</span>
-            </div>
-        </section>
-
-        <!--Buttons-->
-        <h1>Buttons</h1>
-
-        <p class="description">Buttons are most common components in websites. Button component is used to trigger an action, such as submitting a form, opening a dialog, adding item to cart, or performing a delete operation.</p>
-
-        <h2>Solid Buttons</h2>
-
-        <p class="description">These buttons are used for primary actions in websites. To add a primary button use class-name <span class="highlight"> btn </span> along with variant class-name such as <span class="highlight"> btn-primary, btn-secondary, btn-success, btn-danger, btn-warning or btn-info.</span></p>
-
-        <section class="example-container-align-horizontal">
-            <button class="btn btn-primary">Primary Button</button>
-            <button class="btn btn-secondary">Secondary Button</button>
-            <button class="btn btn-success">Success Button</button>
-            <button class="btn btn-danger">Danger Button</button>
-            <button class="btn btn-warning">Warning Button</button>
-            <button class="btn btn-info">Info Button</button>
-
-        </section>
-
-        <h2>Outline Buttons</h2>
-
-        <p class="description">These are buttons with minimal styling. To add outline buttons use class-name <span class="highlight"> btn </span> along with variant class-name such as <span class="highlight"> btn-outline-primary, btn-outline-secondary, btn-outline-success, btn-outline-danger, btn-outline-warning or btn-outline-info.</span> </p>
-
-        <section class="example-container-align-horizontal">
-            <button class="btn btn-outline-primary">Primary Button</button>
-            <button class="btn btn-outline-secondary">Secondary Button</button>
-            <button class="btn btn-outline-success">Success Button</button>
-            <button class="btn btn-outline-danger">Danger Button</button>
-            <button class="btn btn-outline-warning">Warning Button</button>
-            <button class="btn btn-outline-info">Info Button</button>
-
-        </section>
-
-        <h2>Link Buttons</h2>
-
-        <p class="description">You can also make anchor element as a button. To make anchor button add <span class="highlight"> btn </span>class-name along with a variant of button and give it a <span class="highlight"> role="button" </span>for accessibility purpose.</p>
-
-        <section class="example-container-align-horizontal">
-            <a class="btn btn-primary" href="#" role="button">Link Primary</a>
-            <a class="btn btn-secondary" href="#" role="button">Link Secondary</a>
-        </section>
-
-        <h2>Icon Buttons</h2>
-
-        <p class="description">You can make icon button or icon button with text by adding icons from fontawesome within your button element. </p>
-
-        <section class="example-container-align-horizontal">
-            <button class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
-            <button class="btn btn-primary"><i class="fas fa-bars"></i></button>
-            <button class="btn btn-primary"><i class="fas fa-trash-alt"></i></button>
-            <button class="btn btn-primary"><i class="fas fa-times"></i></button>
-
-            <button class="btn btn-primary"><i class="fas fa-cart-plus"></i>
-            <span class="md-ht-1">ADD TO CART</span></button>
-            <button class="btn btn-primary"><i class="fas fa-bars"></i><span class="md-ht-1">MENU</span></button>
-            <button class="btn btn-primary"><i class="fas fa-trash-alt"></i><span class="md-ht-1">DELETE</span></button>
-            <button class="btn btn-primary"><i class="fas fa-times"></i><span class="md-ht-1">CLOSE</span></button>
-        </section>
-
-        <h2>Floating action Button</h2>
-
-        <p class="description">Floating action button can be used by adding <span class="highlight">btn </span> class-name along with <span class="highlight">btn-fab</span>. This button will be fixed to right-bottom corner.</p>
-
-        <section class="example-container-align-horizontal">
-            <button class="btn btn-fab align-items-center"> + </div>
-        </section>
-
-        <!--Cards-->
-        <h1>Cards</h1>
-
-        <p class="description">A card is a container in itself having a header, body and footer.</p>
-
-        <h2>Cards with Badges</h2>
-        <p class="description">All cards follow same template in shuttle UI. To make a card use class-name <span class="highlight">card</span> in your main container. Cards with badge use badge component to add a badge on top of the image. Copy the below code snippet, put text and image of your own and you are good to go.</p>
-
-        <section class="example-container-align-horizontal">
-            <div class="card align-items-center">
-                <div class="card-header">
-                    <img class="card-img" src="./components/assets/shuttles.jpg" alt="">
-                    <span class="card-badge badge">Trending</span>
+            <p class="description">Badges on avatars are used to show online/offline status. Use class-name <span
+                    class="highlight">badge-container</span> on parent container/element. And use <span
+                    class="highlight"> badge-online, badge-offline, badge-dnd or badge-last-seen</span> along with
+                class-name <span class="highlight"> badge </span> on the element as per need.</p>
+            <section class="example-container-align-horizontal">
+                <div class="badge-container">
+                    <img src="./components/assets/avatar-girl.jpg" class=" avatar avatar-round avatar-lg"
+                        alt="round large avatar image"> <span class="badge badge-online"></span>
                 </div>
-                <div class="card-body">
-                    <h3>Yonex Feather Shuttle</h3>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
-                </div>
-                <div class="card-footer">
-                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
-                </div>
-            </div>
 
-            <div class="card align-items-center">
-                <div class="card-header">
-                    <img class="card-img" src="./components/assets/racquet-shuttle.jpg" alt="">
-                    <span class="card-badge badge">Sale</span>
+                <div class="badge-container">
+                    <img src="./components/assets/avatar-man.jpg" class="avatar avatar-round avatar-md"
+                        alt="round medium avatar image"> <span class="badge badge-online badge-dnd"></span>
                 </div>
-                <div class="card-body">
-                    <h3>Yonex Racquet</h3>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="md-ht-1">Rs.1,349 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1925 </span> (30% OFF)</span> </p>
+
+                <div class="badge-container">
+                    <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-round avatar-sm"
+                        alt="round small avatar image"> <span class="badge badge-offline"></span>
                 </div>
-                <div class="card-footer">
-                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
+
+                <div class="badge-container">
+                    <img src="./components/assets/avatar-badminton.jpg" class="avatar avatar-round avatar-xs"
+                        alt="round extra small avatar image"> <span class="badge badge-last-seen">2m</span>
                 </div>
-            </div>
+            </section>
 
-        </section>
+            <section class="code-container">
+                <pre>
+                <code class="hjs html">
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;img src=&quot;./components/assets/avatar-girl.jpg&quot; class=&quot; avatar avatar-round avatar-lg&quot;
+                            alt=&quot;round large avatar image&quot;&gt; &lt;span class=&quot;badge badge-online&quot;&gt;&lt;/span&gt;
+                    &lt;/div&gt;
 
-        <!--Horizontal cards-->
-        <h2>Horizontal Cards</h2>
-        <p class="description">Horizontal cards are there to add diversity in card components. They come up with two button elements.  Use class-name <span class="highlight">card-horizontal</span> along with <span class="highlight">card in main container</span>. And add <span class="highlight">card-horizontal-img</span> class-name in image element. Copy the below code-snippet to use card component in your project.</p>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;img src=&quot;./components/assets/avatar-man.jpg&quot; class=&quot;avatar avatar-round avatar-md&quot;
+                            alt=&quot;round medium avatar image&quot;&gt; &lt;span class=&quot;badge badge-online badge-dnd&quot;&gt;&lt;/span&gt;
+                    &lt;/div&gt;
 
-        <section class="example-container">    
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;img src=&quot;./components/assets/avatar-badminton.jpg&quot; class=&quot;avatar avatar-round avatar-sm&quot;
+                            alt=&quot;round small avatar image&quot;&gt; &lt;span class=&quot;badge badge-offline&quot;&gt;&lt;/span&gt;
+                    &lt;/div&gt;
 
-             <div class="card align-items-center card-horizontal">
-                <div class="card-header">
-                    <img class="card-img card-horizontal-img" src="./components/assets/shuttles.jpg" alt="">
-                    <span class="card-badge badge">Sale</span>
-                </div>
-                <div class="md-ht-1 card-body">
-                    <h3>Yonex Feather Shuttle</h3>
-                    <p class="md-ht-1">Rs.1,349 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1925 </span> (30% OFF)</span> </p>
-                    <div class="card-horizontal-footer">
-                        <button class="card-horizontal-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
-                        <button class="card-horizontal-btn btn btn-outline-primary"><i class="fas fa-heart"></i><span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                    &lt;div class=&quot;badge-container&quot;&gt;
+                        &lt;img src=&quot;./components/assets/avatar-badminton.jpg&quot; class=&quot;avatar avatar-round avatar-xs&quot;
+                            alt=&quot;round extra small avatar image&quot;&gt; &lt;span class=&quot;badge badge-last-seen&quot;&gt;2m&lt;/span&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            </section>
+
+            <hr>
+            <!--Buttons-->
+            <h1 id="Button" class="component-heading">Buttons</h1>
+
+            <p class="intro-text">Buttons are most common components in websites. Button component is used to trigger an
+                action, such as submitting a form, opening a dialog, adding item to cart, or performing a delete
+                operation.</p>
+
+            <h2>Solid Buttons</h2>
+
+            <p class="description">These buttons are used for primary actions in websites. To add a primary button use
+                class-name <span class="highlight"> btn </span> along with variant class-name such as <span
+                    class="highlight"> btn-primary, btn-secondary, btn-success, btn-danger, btn-warning or
+                    btn-info.</span></p>
+
+            <section class="example-container-align-horizontal">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-success">Success Button</button>
+                <button class="btn btn-danger">Danger Button</button>
+                <button class="btn btn-warning">Warning Button</button>
+                <button class="btn btn-info">Info Button</button>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;Primary Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-success&quot;&gt;Success Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-danger&quot;&gt;Danger Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-warning&quot;&gt;Warning Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-info&quot;&gt;Info Button&lt;/button&gt;
+                </code>
+            </pre>
+            </section>
+
+            <h2>Outline Buttons</h2>
+
+            <p class="description">These are buttons with minimal styling. To add outline buttons use class-name <span
+                    class="highlight"> btn </span> along with variant class-name such as <span class="highlight">
+                    btn-outline-primary, btn-outline-secondary, btn-outline-success, btn-outline-danger,
+                    btn-outline-warning or btn-outline-info.</span> </p>
+
+            <section class="example-container-align-horizontal">
+                <button class="btn btn-outline-primary">Primary Button</button>
+                <button class="btn btn-outline-secondary">Secondary Button</button>
+                <button class="btn btn-outline-success">Success Button</button>
+                <button class="btn btn-outline-danger">Danger Button</button>
+                <button class="btn btn-outline-warning">Warning Button</button>
+                <button class="btn btn-outline-info">Info Button</button>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Primary Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-outline-secondary&quot;&gt;Secondary Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-outline-success&quot;&gt;Success Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-outline-danger&quot;&gt;Danger Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-outline-warning&quot;&gt;Warning Button&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-outline-info&quot;&gt;Info Button&lt;/button&gt;
+                </code>
+            </pre>
+            </section>
+
+            <h2>Link Buttons</h2>
+
+            <p class="description">You can also make anchor element as a button. To make anchor button add <span
+                    class="highlight"> btn </span>class-name along with a variant of button and give it a <span
+                    class="highlight"> role="button" </span>for accessibility purpose.</p>
+
+            <section class="example-container-align-horizontal">
+                <a class="btn btn-primary" href="#" role="button">Link Primary</a>
+                <a class="btn btn-secondary" href="#" role="button">Link Secondary</a>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link Primary&lt;/a&gt;
+                    &lt;a class=&quot;btn btn-secondary&quot; href=&quot;#&quot; role=&quot;button&quot;&gt;Link Secondary&lt;/a&gt;
+                </code>
+            </pre>
+            </section>
+
+            <h2>Icon Buttons</h2>
+
+            <p class="description">You can make icon button or icon button with text by adding icons from fontawesome
+                within your button element. </p>
+
+            <section class="example-container-align-horizontal">
+                <button class="btn btn-primary"><i class="fas fa-cart-plus"></i></button>
+                <button class="btn btn-primary"><i class="fas fa-bars"></i></button>
+                <button class="btn btn-primary"><i class="fas fa-trash-alt"></i></button>
+                <button class="btn btn-primary"><i class="fas fa-times"></i></button>
+
+                <button class="btn btn-primary"><i class="fas fa-cart-plus"></i>
+                    <span class="md-ht-1">ADD TO CART</span></button>
+                <button class="btn btn-primary"><i class="fas fa-bars"></i><span class="md-ht-1">MENU</span></button>
+                <button class="btn btn-primary"><i class="fas fa-trash-alt"></i><span
+                        class="md-ht-1">DELETE</span></button>
+                <button class="btn btn-primary"><i class="fas fa-times"></i><span class="md-ht-1">CLOSE</span></button>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-trash-alt&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+        
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;
+                    &lt;span class=&quot;md-ht-1&quot;&gt;ADD TO CART&lt;/span&gt;&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-bars&quot;&gt;&lt;/i&gt;&lt;span class=&quot;md-ht-1&quot;&gt;MENU&lt;/span&gt;&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-trash-alt&quot;&gt;&lt;/i&gt;&lt;span class=&quot;md-ht-1&quot;&gt;DELETE&lt;/span&gt;&lt;/button&gt;
+                    &lt;button class=&quot;btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;&lt;span class=&quot;md-ht-1&quot;&gt;CLOSE&lt;/span&gt;&lt;/button&gt;
+                </code>
+            </pre>
+            </section>
+
+            <h2>Floating action Button</h2>
+
+            <p class="description">Floating action button can be used by adding <span class="highlight">btn </span>
+                class-name along with <span class="highlight">btn-fab</span>. This button will be fixed to right-bottom
+                corner.</p>
+
+            <section class="example-container-align-horizontal">
+                <button class="btn btn-fab align-items-center"> + </div>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;button class=&quot;btn btn-fab align-items-center&quot;&gt; + &lt;/div&gt;
+                </code>
+            </pre>
+            </section>
+
+            <hr>
+            <!--Cards-->
+            <h1 id="Cards" class="component-heading">Cards</h1>
+
+            <p class="intro-text">A card is a container in itself having a header, body and footer.</p>
+
+            <h2>Cards with Badges</h2>
+            <p class="description">All cards follow same template in shuttle UI. To make a card use class-name <span
+                    class="highlight">card</span> in your main container. Cards with badge use badge component to add a
+                badge on top of the image. Copy the below code snippet, put text and image of your own and you are good
+                to go.</p>
+
+            <section class="example-container-align-horizontal">
+                <div class="card align-items-center">
+                    <div class="card-header">
+                        <img class="card-img" src="./components/assets/shuttles.jpg" alt="">
+                        <span class="card-badge badge">Trending</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Yonex Feather Shuttle</h3>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1">
+                                    Rs.1299 </span> (62% OFF)</span> </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span
+                                class="md-ht-1">ADD TO CART</span></button>
                     </div>
                 </div>
-                
-            </div>
-        </section>
 
-        <!--Cards with dismiss-->
-        <h2>Cards with Dismiss</h2>
-        <p class="description"> Card with dismiss comes with a cross button on right side of the card. To add dismiss you would have to add font-awesome icon and give it a class-name of  <span class="highlight">card-dismiss</span>. Copy the below-code snippet to use cards with dismiss.</p>
-
-        <section class="example-container-align-horizontal">
-            <div class="card align-items-center">
-                <div class="card-header">
-                    <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
-                    <span><i class="card-dismiss fas fa-times"></i></span>
+                <div class="card align-items-center">
+                    <div class="card-header">
+                        <img class="card-img" src="./components/assets/racquet-shuttle.jpg" alt="">
+                        <span class="card-badge badge">Sale</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Yonex Racquet</h3>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="md-ht-1">Rs.1,349 <span class="card-discount"> <span class="original-price md-ht-1">
+                                    Rs.1925 </span> (30% OFF)</span> </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span
+                                class="md-ht-1">ADD TO CART</span></button>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h3>Yonex Feather Shuttle</h3>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
-                </div>
-                <div class="card-footer">
-                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
-                </div>
-            </div>
-        </section>
 
-         <!--Cards with Text Overlay-->
-         <h2>Cards with Overlay</h2>
-         <p class="description"> To use card with overlay copy the below code-snippet and use class-name as given. </p>
- 
-         <section class="example-container-align-horizontal">
-             <div class="card align-items-center">
-                 <div class="card-overlay align-items-center">SOLD OUT</div>
-                 <div class="card-header">
-                     <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
-                 </div>
-                 <div class="card-body">
-                     <h3>Yonex Feather Shuttle</h3>
-                     <p class="card-description">Currently out of stock</p>
-                     <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
-                 </div>
-                 <div class="card-footer">
-                     <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
-                 </div>
-             </div>
+            </section>
 
-             <!--Second card with overlay-->
-             <div class="card align-items-center">
-                <div class="card-header">
-                    <img class="card-img" src="./components/assets/smash badminton.jpg" alt="">
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                &lt;div class=&quot;card align-items-center&quot;&gt;
+                    &lt;div class=&quot;card-header&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;./components/assets/shuttles.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;span class=&quot;card-badge badge&quot;&gt;Trending&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h3&gt;Yonex Feather Shuttle&lt;/h3&gt;
+                        &lt;p class=&quot;card-description&quot;&gt;Lorem ipsum dolor sit amet consectetur&lt;/p&gt;
+                        &lt;p class=&quot;md-ht-1&quot;&gt;Rs.490 &lt;span class=&quot;card-discount&quot;&gt; 
+                        &lt;span class=&quot;original-price md-ht-1&quot;&gt; Rs.1299 &lt;/span&gt; (62% OFF)&lt;/span&gt; &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-footer&quot;&gt;
+                        &lt;button class=&quot;card-btn btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;
+                        &lt;span class=&quot;md-ht-1&quot;&gt;ADD TO CART&lt;/span&gt;&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card align-items-center&quot;&gt;
+                    &lt;div class=&quot;card-header&quot;&gt;
+                        &lt;img class=&quot;card-img&quot; src=&quot;./components/assets/racquet-shuttle.jpg&quot; alt=&quot;&quot;&gt;
+                        &lt;span class=&quot;card-badge badge&quot;&gt;Sale&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-body&quot;&gt;
+                        &lt;h3&gt;Yonex Racquet&lt;/h3&gt;
+                        &lt;p class=&quot;card-description&quot;&gt;Lorem ipsum dolor sit amet consectetur&lt;/p&gt;
+                        &lt;p class=&quot;md-ht-1&quot;&gt;Rs.1,349 &lt;span class=&quot;card-discount&quot;&gt; 
+                        &lt;span class=&quot;original-price md-ht-1&quot;&gt; Rs.1925 &lt;/span&gt; (30% OFF)&lt;/span&gt; &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card-footer&quot;&gt;
+                        &lt;button class=&quot;card-btn btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;
+                        &lt;span class=&quot;md-ht-1&quot;&gt;ADD TO CART&lt;/span&gt;&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+            </section>
+
+            <!--Horizontal cards-->
+            <h2>Horizontal Cards</h2>
+            <p class="description">Horizontal cards are there to add diversity in card components. They come up with two
+                button elements. Use class-name <span class="highlight">card-horizontal</span> along with <span
+                    class="highlight">card in main container</span>. And add <span
+                    class="highlight">card-horizontal-img</span> class-name in image element. Copy the below
+                code-snippet to use card component in your project.</p>
+
+            <section class="example-container">
+
+                <div class="card align-items-center card-horizontal">
+                    <div class="card-header">
+                        <img class="card-img card-horizontal-img" src="./components/assets/shuttles.jpg" alt="">
+                        <span class="card-badge badge">Sale</span>
+                    </div>
+                    <div class="md-ht-1 card-body">
+                        <h3>Yonex Feather Shuttle</h3>
+                        <p class="md-ht-1">Rs.1,349 <span class="card-discount"> <span class="original-price md-ht-1">
+                                    Rs.1925 </span> (30% OFF)</span> </p>
+                        <div class="card-horizontal-footer">
+                            <button class="card-horizontal-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span
+                                    class="md-ht-1">ADD TO CART</span></button>
+                            <button class="card-horizontal-btn btn btn-outline-primary"><i
+                                    class="fas fa-heart"></i><span class="md-ht-1">SAVE TO WISHLIST</span></button>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="card-body card-overlay-text btn btn-primary">
-                    New Arrival
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;div class=&quot;card align-items-center card-horizontal&quot;&gt;
+                        &lt;div class=&quot;card-header&quot;&gt;
+                            &lt;img class=&quot;card-img card-horizontal-img&quot; src=&quot;./components/assets/shuttles.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;span class=&quot;card-badge badge&quot;&gt;Sale&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;md-ht-1 card-body&quot;&gt;
+                            &lt;h3&gt;Yonex Feather Shuttle&lt;/h3&gt;
+                            &lt;p class=&quot;md-ht-1&quot;&gt;Rs.1,349 &lt;span class=&quot;card-discount&quot;&gt; &lt;span class=&quot;original-price md-ht-1&quot;&gt; Rs.1925 &lt;/span&gt; 
+                            (30% OFF)&lt;/span&gt; &lt;/p&gt;
+                            &lt;div class=&quot;card-horizontal-footer&quot;&gt;
+                                &lt;button class=&quot;card-horizontal-btn btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;
+                                &lt;span class=&quot;md-ht-1&quot;&gt;ADD TO CART&lt;/span&gt;&lt;/button&gt;
+                                &lt;button class=&quot;card-horizontal-btn btn btn-outline-primary&quot;&gt;&lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+                                &lt;span class=&quot;md-ht-1&quot;&gt;SAVE TO WISHLIST&lt;/span&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                    &lt;/div&gt;
+                </code>
+            </pre>
+
+            </section>
+
+            <!--Cards with dismiss-->
+            <h2>Cards with Dismiss</h2>
+            <p class="description"> Card with dismiss comes with a cross button on right side of the card. To add
+                dismiss you would have to add font-awesome icon and give it a class-name of <span
+                    class="highlight">card-dismiss</span>. Copy the below-code snippet to use cards with dismiss.</p>
+
+            <section class="example-container-align-horizontal">
+                <div class="card align-items-center">
+                    <div class="card-header">
+                        <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
+                        <span><i class="card-dismiss fas fa-times"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Yonex Feather Shuttle</h3>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1">
+                                    Rs.1299 </span> (62% OFF)</span> </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span
+                                class="md-ht-1">ADD TO CART</span></button>
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <button class="btn btn-primary">Shop Now</button>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;div class=&quot;card align-items-center&quot;&gt;
+                        &lt;div class=&quot;card-header&quot;&gt;
+                            &lt;img class=&quot;card-img&quot; src=&quot;./components/assets/badminton shuttle.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;span&gt;&lt;i class=&quot;card-dismiss fas fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;card-body&quot;&gt;
+                            &lt;h3&gt;Yonex Feather Shuttle&lt;/h3&gt;
+                            &lt;p class=&quot;card-description&quot;&gt;Lorem ipsum dolor sit amet consectetur&lt;/p&gt;
+                            &lt;p class=&quot;md-ht-1&quot;&gt;Rs.490 &lt;span class=&quot;card-discount&quot;&gt; 
+                            &lt;span class=&quot;original-price md-ht-1&quot;&gt; Rs.1299 &lt;/span&gt; (62% OFF)&lt;/span&gt; &lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;card-footer&quot;&gt;
+                            &lt;button class=&quot;card-btn btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;
+                            &lt;span class=&quot;md-ht-1&quot;&gt;ADD TO CART&lt;/span&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            </section>
+
+            <!--Cards with Text Overlay-->
+            <h2>Cards with Overlay</h2>
+            <p class="description"> To use card with overlay copy the below code-snippet and use class-name as given.
+            </p>
+
+            <section class="example-container-align-horizontal">
+                <div class="card align-items-center">
+                    <div class="card-overlay align-items-center">SOLD OUT</div>
+                    <div class="card-header">
+                        <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Yonex Feather Shuttle</h3>
+                        <p class="card-description">Currently out of stock</p>
+                        <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1">
+                                    Rs.1299 </span> (62% OFF)</span> </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span
+                                class="md-ht-1">ADD TO CART</span></button>
+                    </div>
                 </div>
-            </div>
-         </section>
 
-          <!--Text only cards-->
-        <h2>Text only Cards</h2>
-        <p class="description">Text only cards are the simplest cards available. You can align-text in the body using utility classes like <span class="highlight">align-text-left, align-text-center and align-text-right</span>. You can also add buttons in text only cards by adding button components at the footer of the card.</p>
-
-        <section class="example-container-align-horizontal">
-            <div class="card align-items-center">
-                <div class="card-header align-text-left">
-                   <h3>Card Title</h3>
+                <!--Second card with overlay-->
+                <div class="card align-items-center">
+                    <div class="card-header">
+                        <img class="card-img" src="./components/assets/smash badminton.jpg" alt="">
+                    </div>
+                    <div class="card-body card-overlay-text btn btn-primary">
+                        New Arrival
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
                 </div>
-                <div class="card-body align-text-center">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam sint, cum illo quasi autem quas eum exercitationem fugiat eligendi!</p>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                 <code class="html">
+                        &lt;div class=&quot;card align-items-center&quot;&gt;
+                            &lt;div class=&quot;card-overlay align-items-center&quot;&gt;SOLD OUT&lt;/div&gt;
+                            &lt;div class=&quot;card-header&quot;&gt;
+                                &lt;img class=&quot;card-img&quot; src=&quot;./components/assets/badminton shuttle.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-body&quot;&gt;
+                                &lt;h3&gt;Yonex Feather Shuttle&lt;/h3&gt;
+                                &lt;p class=&quot;card-description&quot;&gt;Currently out of stock&lt;/p&gt;
+                                &lt;p class=&quot;md-ht-1&quot;&gt;Rs.490 &lt;span class=&quot;card-discount&quot;&gt; 
+                                &lt;span class=&quot;original-price md-ht-1&quot;&gt; Rs.1299 &lt;/span&gt; 
+                                (62% OFF)&lt;/span&gt; &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-footer&quot;&gt;
+                                &lt;button class=&quot;card-btn btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;&lt;/i&gt;
+                                &lt;span class=&quot;md-ht-1&quot;&gt;ADD TO CART&lt;/span&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+        
+                        &lt;!--Second card with overlay--&gt;
+                        &lt;div class=&quot;card align-items-center&quot;&gt;
+                            &lt;div class=&quot;card-header&quot;&gt;
+                                &lt;img class=&quot;card-img&quot; src=&quot;./components/assets/smash badminton.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-body card-overlay-text btn btn-primary&quot;&gt;
+                                New Arrival
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-footer&quot;&gt;
+                                &lt;button class=&quot;btn btn-primary&quot;&gt;Shop Now&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                 </code>
+             </pre>
+            </section>
+
+            <!--Text only cards-->
+            <h2>Text only Cards</h2>
+            <p class="description">Text only cards are the simplest cards available. You can align-text in the body
+                using utility classes like <span class="highlight">align-text-left, align-text-center and
+                    align-text-right</span>. You can also add buttons in text only cards by adding button components at
+                the footer of the card.</p>
+
+            <section class="example-container-align-horizontal">
+                <div class="card align-items-center">
+                    <div class="card-header align-text-left">
+                        <h3>Card Title</h3>
+                    </div>
+                    <div class="card-body align-text-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam sint, cum illo quasi
+                            autem quas eum exercitationem fugiat eligendi!</p>
+                    </div>
+                    <div class="card-footer align-items-center">
+                        <button class="btn btn-primary" role="button">Yes</button>
+                        <button class="btn btn-outline-primary">No</button>
+                    </div>
                 </div>
-                <div class="card-footer align-items-center">
-                    <button class="btn btn-primary" role="button">Yes</button>
-                    <button class="btn btn-outline-primary">No</button>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;div class=&quot;card align-items-center&quot;&gt;
+                        &lt;div class=&quot;card-header align-text-left&quot;&gt;
+                        &lt;h3&gt;Card Title&lt;/h3&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;card-body align-text-center&quot;&gt;
+                            &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Enim totam sint, cum illo quasi autem quas eum exercitationem fugiat eligendi!&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;card-footer align-items-center&quot;&gt;
+                            &lt;button class=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;Yes&lt;/button&gt;
+                            &lt;button class=&quot;btn btn-outline-primary&quot;&gt;No&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+            </section>
+
+            <!--Cards with shadow-->
+            <h2>Card With shadow</h2>
+            <p class="description"> Although all cards in Shuttle UI comes with shadow but you can use alternate shadow
+                using class-name <span class="highlight">card-shadow-alternate</span> in the main container.</p>
+
+            <section class="example-container-align-horizontal">
+                <div class="card align-items-center card-shadow-alternate">
+                    <div class="card-header">
+                        <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Yonex Feather Shuttle</h3>
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
+                        <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1">
+                                    Rs.1299 </span> (62% OFF)</span> </p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span
+                                class="md-ht-1">ADD TO CART</span></button>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-          <!--Cards with shadow-->
-          <h2>Card With shadow</h2>
-          <p class="description"> Although all cards in Shuttle UI comes with shadow but you can use alternate shadow using class-name <span class="highlight">card-shadow-alternate</span> in the main container.</p>
-  
-          <section class="example-container-align-horizontal">
-            <div class="card align-items-center card-shadow-alternate">
-                <div class="card-header">
-                    <img class="card-img" src="./components/assets/badminton shuttle.jpg" alt="">
-                </div>
-                <div class="card-body">
-                    <h3>Yonex Feather Shuttle</h3>
-                    <p class="card-description">Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="md-ht-1">Rs.490 <span class="card-discount"> <span class="original-price md-ht-1"> Rs.1299 </span> (62% OFF)</span> </p>
-                </div>
-                <div class="card-footer">
-                    <button class="card-btn btn btn-primary"><i class="fas fa-cart-plus"></i><span class="md-ht-1">ADD TO CART</span></button>
-                </div>
-            </div>
+            </section>
 
-          </section>
+            <section class="code-container">
+                <pre>
+                  <code class="html">
+                        &lt;div class=&quot;card align-items-center card-shadow-alternate&quot;&gt;
+                            &lt;div class=&quot;card-header&quot;&gt;
+                                &lt;img class=&quot;card-img&quot; src=&quot;./components/assets/badminton shuttle.jpg&quot; alt=&quot;&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-body&quot;&gt;
+                                &lt;h3&gt;Yonex Feather Shuttle&lt;/h3&gt;
+                                &lt;p class=&quot;card-description&quot;&gt;Lorem ipsum dolor sit amet consectetur&lt;/p&gt;
+                                &lt;p class=&quot;md-ht-1&quot;&gt;Rs.490 &lt;span class=&quot;card-discount&quot;&gt; 
+                                &lt;span class=&quot;original-price md-ht-1&quot;&gt; Rs.1299 &lt;/span&gt; (62% OFF)&lt;/span&gt; &lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class=&quot;card-footer&quot;&gt;
+                                &lt;button class=&quot;card-btn btn btn-primary&quot;&gt;&lt;i class=&quot;fas fa-cart-plus&quot;&gt;
+                                &lt;/i&gt;&lt;span class=&quot;md-ht-1&quot;&gt;ADD TO CART&lt;/span&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                  </code>
+              </pre>
+            </section>
 
-          <!--Images-->
-          <h1>Images</h1>
+            <hr>
+            <!--Images-->
+            <h1 id="Image" class="component-heading">Images</h1>
 
-          <p class="description">Images are made responsive so that it takes width of the enclosed container.</p>
-  
-          <h2>Responsive images</h2>
-          <p class="description">To make images responsive add class <span class="highlight">responsive-img</span> in the img tag. If you are using picture tag make sure you add the <span class="highlight">responsive-img</span> class in img element and not on picture element. <span class="highlight">Resize the screen to see the responsiveness of image</span>. </p>
-  
-          <section class="example-container-align-horizontal">
-              <picture>
-                <source srcset="./components/assets/mobile.jpg" media="(max-width: 400px)">
-                <source srcset="./components/assets/web.jpg" >
-                <img class="responsive-img" src="./components/assets/web.jpg" alt="responsive img example">
-              </picture> 
-                   
-          </section>
+            <p class="intro-text">Images are made responsive so that it takes width of the enclosed container.</p>
 
-          <h2>Round images</h2>
-          <p class="description"> You can make images round by adding <span class="highlight">round-img</span> class to img tag. Round images comes in three different sizes. Add <span class="highlight">round-lg, round-md round-sm</span> classes to set size on round images.</p>
-  
-          <section class="example-container-align-horizontal">
-              <img class="round-img round-lg" src="./components/assets/avatar-badminton.jpg" alt="">  
-              <img class="round-img round-md" src="./components/assets/avatar-badminton.jpg" alt="">   
-              <img class="round-img round-sm" src="./components/assets/avatar-badminton.jpg" alt="">      
-          </section>
+            <h2>Responsive images</h2>
+            <p class="description">To make images responsive add class <span class="highlight">responsive-img</span> in
+                the img tag. If you are using picture tag make sure you add the <span
+                    class="highlight">responsive-img</span> class in img element and not on picture element. <span
+                    class="highlight">Resize the screen to see the responsiveness of image</span>. </p>
 
-           <!--Inputs-->
-           <h1>Inputs</h1>
+            <section class="example-container-align-horizontal">
+                <picture>
+                    <source srcset="./components/assets/mobile.jpg" media="(max-width: 400px)">
+                    <source srcset="./components/assets/web.jpg">
+                    <img class="responsive-img" src="./components/assets/web.jpg" alt="responsive img example">
+                </picture>
 
-           <p class="description">Inputs are most important components of any webpage. Inputs are very helpful in getting information from user.</p>
-   
-           <h2>Textbox</h2>
-           <p class="description">Text input fields are typically used to take data such as firstname, lastname, fullname and feedback/comment. You can change size of the input box using <span class="highlight">form-input-lg and form-input-md</span> along with <span class="highlight">form-input</span> class.</p>
-   
-           <section class="example-container">
-                <form action="">
+            </section>
+
+            <section class="code-container">
+                <pre>
+                  <code class="html">
+                    &lt;picture&gt;
+                        &lt;source srcset=&quot;./components/assets/mobile.jpg&quot; media=&quot;(max-width: 400px)&quot;&gt;
+                        &lt;source srcset=&quot;./components/assets/web.jpg&quot; &gt;
+                        &lt;img class=&quot;responsive-img&quot; src=&quot;./components/assets/web.jpg&quot; alt=&quot;responsive img example&quot;&gt;
+                    &lt;/picture&gt; 
+                  </code>
+              </pre>
+            </section>
+
+            <h2>Round images</h2>
+            <p class="description"> You can make images round by adding <span class="highlight">round-img</span> class
+                to img tag. Round images comes in three different sizes. Add <span class="highlight">round-lg, round-md
+                    round-sm</span> classes to set size on round images.</p>
+
+            <section class="example-container-align-horizontal">
+                <img class="round-img round-lg" src="./components/assets/avatar-badminton.jpg" alt="">
+                <img class="round-img round-md" src="./components/assets/avatar-badminton.jpg" alt="">
+                <img class="round-img round-sm" src="./components/assets/avatar-badminton.jpg" alt="">
+            </section>
+
+            <section class="code-container">
+                <pre>
+                <code class="html">
+                    &lt;img class=&quot;round-img round-lg&quot; src=&quot;./components/assets/avatar-badminton.jpg&quot; alt=&quot;&quot;&gt;  
+                    &lt;img class=&quot;round-img round-md&quot; src=&quot;./components/assets/avatar-badminton.jpg&quot; alt=&quot;&quot;&gt;   
+                    &lt;img class=&quot;round-img round-sm&quot; src=&quot;./components/assets/avatar-badminton.jpg&quot; alt=&quot;&quot;&gt;    
+                </code>
+            </pre>
+            </section>
+
+            <hr>
+            <!--Inputs-->
+            <h1 id="Input" class="component-heading">Inputs</h1>
+
+            <p class="intro-text">Inputs are most important components of any webpage. Inputs are very helpful in
+                getting information from user.</p>
+
+            <h2>Textbox</h2>
+            <p class="description">Text input fields are typically used to take data such as firstname, lastname,
+                fullname and feedback/comment. You can change size of the input box using <span
+                    class="highlight">form-input-lg and form-input-md</span> along with <span
+                    class="highlight">form-input</span> class.</p>
+
+            <section class="example-container">
+                <form>
 
                     <div class="form-set">
                         <label class="form-label" for="fname">First Name:</label>
                         <input class="form-input form-input-lg pd-1" type="text" id="fname" name="fname">
                     </div>
-                    
+
                     <div class="form-set">
                         <label class="form-label" for="lname">Last Name:</label>
                         <input class="form-input form-input-lg pd-1" type="text" id="lname" name="lname">
@@ -497,56 +1075,127 @@
 
                     <div class="form-set">
                         <label class="form-label" for="feedback-box">Send Feedbacks:</label>
-                        <textarea class="form-input pd-1" name="feedback" id="feedback-box" cols="30" rows="10"></textarea>
+                        <textarea class="form-input pd-1" name="feedback" id="feedback-box" cols="30"
+                            rows="10"></textarea>
                     </div>
-                    
-                </form>
-           </section>
 
-           <h2>Checkbox, radio and select inputs</h2>
-           <p class="description">Add class <span class="highlight">form-check</span> in parent container to align checkboxes and radio with their respective labels.</p>
-   
-           <section class="example-container">
-                <form action="#">
+                </form>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                   <code class="html">
+                        &lt;form&gt;
+
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;fname&quot;&gt;First Name:&lt;/label&gt;
+                                &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot;&gt;
+                            &lt;/div&gt;
+                            
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;lname&quot;&gt;Last Name:&lt;/label&gt;
+                                &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot;&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;fullname&quot;&gt;Full Name:&lt;/label&gt;
+                                &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;text&quot; id=&quot;fullname&quot; name=&quot;fullname&quot;&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;feedback-box&quot;&gt;Send Feedbacks:&lt;/label&gt;
+                                &lt;textarea class=&quot;form-input pd-1&quot; name=&quot;feedback&quot; id=&quot;feedback-box&quot; cols=&quot;30&quot; rows=&quot;10&quot;&gt;&lt;/textarea&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/form&gt;
+                   </code>
+               </pre>
+            </section>
+
+            <h2>Checkbox, radio and select inputs</h2>
+            <p class="description">Add class <span class="highlight">form-check</span> in parent container to align
+                checkboxes and radio with their respective labels.</p>
+
+            <section class="example-container">
+                <form>
                     <div class="form-check">
                         <input type="checkbox" value="demo" id="examplecheck">
-                        <label class="form-label-inline" for="examplecheck"> Example checkbox</label>   
+                        <label class="form-label-inline" for="examplecheck"> Example checkbox</label>
                     </div>
-                    
+
                     <div class="form-check md-vt-1">
-                        <input class="form-check-input" type="radio" name="exampleradio" id="exampleradio" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="exampleradio" id="exampleradio"
+                            value="option1" checked>
                         <label class="form-label-inline" for="exampleradio">Example radio</label>
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleradio" id="exampleradio2" value="option2" checked>
+                        <input class="form-check-input" type="radio" name="exampleradio" id="exampleradio2"
+                            value="option2" checked>
                         <label class="form-label-inline" for="exampleradio2">Example radio 2</label>
                     </div>
 
                     <div class="form-set">
                         <label class="form-label" for="exampleselect">Example select</label>
                         <select class="form-input form-input-lg pd-1" id="exampleselect">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
                         </select>
                     </div>
-                    
-                </form>
-           </section>
 
-           <h2>Inputs with default validation</h2>
-           <p class="description">You can add default validation in form by adding required attribute in input fields. If you are adding default validation make sure you use appropriate type. <span class="highlight">For e.g</span> for email use <span class="highlight">type="email"</span>.</p>
-   
-           <section class="example-container">
-                <form action="#">
+                </form>
+            </section>
+
+            <section class="code-container">
+                <pre>
+                   <code class="html">
+                        &lt;form&gt;
+                            &lt;div class=&quot;form-check&quot;&gt;
+                                &lt;input type=&quot;checkbox&quot; value=&quot;demo&quot; id=&quot;examplecheck&quot;&gt;
+                                &lt;label class=&quot;form-label-inline&quot; for=&quot;examplecheck&quot;&gt; Example checkbox&lt;/label&gt;   
+                            &lt;/div&gt;
+                            
+                            &lt;div class=&quot;form-check md-vt-1&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleradio&quot; id=&quot;exampleradio&quot; value=&quot;option1&quot; checked&gt;
+                                &lt;label class=&quot;form-label-inline&quot; for=&quot;exampleradio&quot;&gt;Example radio&lt;/label&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;form-check&quot;&gt;
+                                &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleradio&quot; id=&quot;exampleradio2&quot; value=&quot;option2&quot; checked&gt;
+                                &lt;label class=&quot;form-label-inline&quot; for=&quot;exampleradio2&quot;&gt;Example radio 2&lt;/label&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;exampleselect&quot;&gt;Example select&lt;/label&gt;
+                                &lt;select class=&quot;form-input form-input-lg pd-1&quot; id=&quot;exampleselect&quot;&gt;
+                                &lt;option&gt;1&lt;/option&gt;
+                                &lt;option&gt;2&lt;/option&gt;
+                                &lt;option&gt;3&lt;/option&gt;
+                                &lt;option&gt;4&lt;/option&gt;
+                                &lt;option&gt;5&lt;/option&gt;
+                                &lt;/select&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/form&gt;
+                   </code>
+               </pre>
+            </section>
+
+            <h2>Inputs with default validation</h2>
+            <p class="description">You can add default validation in form by adding required attribute in input fields.
+                If you are adding default validation make sure you use appropriate type. <span class="highlight">For
+                    e.g</span> for email use <span class="highlight">type="email"</span>.</p>
+
+            <section class="example-container">
+                <form>
                     <div class="form-set">
                         <label class="form-label" for="fname">First Name:</label>
                         <input class="form-input form-input-lg pd-1" type="text" id="fname" name="fname" required>
                     </div>
-                    
+
                     <div class="form-set">
                         <label class="form-label" for="lname">Last Name:</label>
                         <input class="form-input form-input-lg pd-1" type="text" id="lname" name="lname" required>
@@ -559,51 +1208,137 @@
 
                     <div class="form-set">
                         <label class="form-label" for="password">Password:</label>
-                        <input class="form-input form-input-lg pd-1" type="password" id="password" name="password" required>
+                        <input class="form-input form-input-lg pd-1" type="password" id="password" name="password"
+                            required>
                     </div>
-                    
+
                     <input type="submit" class="btn btn-primary form-btn" value="Sign In" role="button">
-                    
+
                 </form>
-           </section>
+            </section>
 
-           <h2>Input with custom validation and error style</h2>
-           <p class="description">Shuttle UI comes with custom validation and error styling on form fields. To add custom validation add <span class="highlight">no-validate</span> boolean attribute in form tag and use class <span class="highlight">form-validation</span>. Make sure to add Shuttle UI JS script if you are using custom validation. Copy the below code snipppet to add custom validation in form fields.
-           <section class="example-container">
-            <form class="form-validation" action="#" novalidate>
-                <div class="form-set">
-                    <label class="form-label" for="fname">Username:</label>
-                    <input class="form-input form-input-lg pd-1" type="text" id="username" name="username">
-                    <div class="form-error-msg"></div>
-                </div>
+            <section class="code-container">
+                <pre>
+                   <code class="html">
+                        &lt;form&gt;
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;fname&quot;&gt;First Name:&lt;/label&gt;
+                                &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;text&quot; id=&quot;fname&quot; name=&quot;fname&quot; required&gt;
+                            &lt;/div&gt;
+                            
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;lname&quot;&gt;Last Name:&lt;/label&gt;
+                                &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;text&quot; id=&quot;lname&quot; name=&quot;lname&quot; required&gt;
+                            &lt;/div&gt;
 
-                <div class="form-set">
-                    <label class="form-label" for="user-email">Email:</label>
-                    <input class="form-input form-input-lg pd-1" type="email" id="user-email" name="email">
-                    <div class="form-error-msg"></div>
-                </div>
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-input form-label&quot; for=&quot;email&quot;&gt;Email:&lt;/label&gt;
+                                &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+                            &lt;/div&gt;
 
-                <div class="form-set">
-                    <label class="form-label" for="user-password">Password:</label>
-                    <input class="form-input form-input-lg pd-1" type="password" id="user-password" name="password">
-                    <div class="form-error-msg"></div>
-                </div>
+                            &lt;div class=&quot;form-set&quot;&gt;
+                                &lt;label class=&quot;form-label&quot; for=&quot;password&quot;&gt;Password:&lt;/label&gt;
+                                &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;
+                            &lt;/div&gt;
+                            
+                            &lt;input type=&quot;submit&quot; class=&quot;btn btn-primary form-btn&quot; value=&quot;Sign In&quot; role=&quot;button&quot;&gt;  
+                        &lt;/form&gt;
+                   </code>
+               </pre>
+            </section>
 
-                <div class="form-set">
-                    <label class="form-label" for="user-password-2">Confirm Password:</label>
-                    <input class="form-input form-input-lg pd-1" type="password" id="user-password-2" name="password-2">
-                    <div class="form-error-msg"></div>
-                </div>
-                
-                <button type="submit" class="btn btn-primary form-btn">Sign Up</button>
-                
-            </form>
-       </section>
+            <h2>Input with custom validation and error style</h2>
+            <p class="description">Shuttle UI comes with custom validation and error styling on form fields. To add
+                custom validation add <span class="highlight">no-validate</span> boolean attribute in form tag and use
+                class <span class="highlight">form-validation</span>. Make sure to add Shuttle UI JS script if you are
+                using custom validation. Copy the below code snipppet to add custom validation in form fields.
+                <section class="example-container">
+                    <form class="form-validation" action="#" novalidate>
+                        <div class="form-set">
+                            <label class="form-label" for="fname">Username:</label>
+                            <input class="form-input form-input-lg pd-1" type="text" id="username" name="username">
+                            <div class="form-error-msg"></div>
+                        </div>
+
+                        <div class="form-set">
+                            <label class="form-label" for="user-email">Email:</label>
+                            <input class="form-input form-input-lg pd-1" type="email" id="user-email" name="email">
+                            <div class="form-error-msg"></div>
+                        </div>
+
+                        <div class="form-set">
+                            <label class="form-label" for="user-password">Password:</label>
+                            <input class="form-input form-input-lg pd-1" type="password" id="user-password"
+                                name="password">
+                            <div class="form-error-msg"></div>
+                        </div>
+
+                        <div class="form-set">
+                            <label class="form-label" for="user-password-2">Confirm Password:</label>
+                            <input class="form-input form-input-lg pd-1" type="password" id="user-password-2"
+                                name="password-2">
+                            <div class="form-error-msg"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-btn">Sign Up</button>
+                    </form>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+               <code class="html">
+                    &lt;form class=&quot;form-validation&quot; action=&quot;#&quot; novalidate&gt;
+                        &lt;div class=&quot;form-set&quot;&gt;
+                            &lt;label class=&quot;form-label&quot; for=&quot;fname&quot;&gt;Username:&lt;/label&gt;
+                            &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot;&gt;
+                            &lt;div class=&quot;form-error-msg&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;form-set&quot;&gt;
+                            &lt;label class=&quot;form-label&quot; for=&quot;user-email&quot;&gt;Email:&lt;/label&gt;
+                            &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;email&quot; id=&quot;user-email&quot; name=&quot;email&quot;&gt;
+                            &lt;div class=&quot;form-error-msg&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;form-set&quot;&gt;
+                            &lt;label class=&quot;form-label&quot; for=&quot;user-password&quot;&gt;Password:&lt;/label&gt;
+                            &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;password&quot; id=&quot;user-password&quot; name=&quot;password&quot;&gt;
+                            &lt;div class=&quot;form-error-msg&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class=&quot;form-set&quot;&gt;
+                            &lt;label class=&quot;form-label&quot; for=&quot;user-password-2&quot;&gt;Confirm Password:&lt;/label&gt;
+                            &lt;input class=&quot;form-input form-input-lg pd-1&quot; type=&quot;password&quot; id=&quot;user-password-2&quot; name=&quot;password-2&quot;&gt;
+                            &lt;div class=&quot;form-error-msg&quot;&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary form-btn&quot;&gt;Sign Up&lt;/button&gt; 
+                    &lt;/form&gt;
+               </code>
+           </pre>
+                </section>
 
     </main>
 
-    <script src="./components/componentsJS/shuttleui-script.js"></script>
+    <footer class="footer align-items-center flex-column">
+        <p class="footer-description md-vt-1">Made by <span class="designed-by">Ankit Kumain</span></p>
+        <ul class="flex-row">
+            <li>
+                <a class="nav-link md-ht-1" href="https://github.com/Maianki/Shuttle-UI"><i
+                        class="fab fa-github-square"></i></a>
+            </li>
+            <li>
+                <a class="nav-link md-ht-1" href="https://twitter.com/Ankit_k10"><i
+                        class="fab fa-twitter-square"></i></a>
+            </li>
+        </ul>
+    </footer>
 
+    <script src="./components/componentsJS/shuttleui-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 
 </html>
