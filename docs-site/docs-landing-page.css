@@ -26,9 +26,12 @@
 }
 
 .btn-landing{
+    display: inline-block;
+    text-align: center;
     width: 25rem;
     height: 5rem;
     font-size: 2rem;
+    padding: 1rem;
     box-shadow: 0 14px 28px var(--DEFAULT-CARD-SHADOW-1), 0 10px 10px var(--DEFAULT-CARD-SHADOW-2);
 }
 
