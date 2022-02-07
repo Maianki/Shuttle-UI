@@ -1,3 +1,4 @@
+/*Form Validation*/
 const form = document.querySelector('.form-validation');
 const username = document.querySelector('#username');
 const email = document.querySelector('#user-email');
@@ -73,4 +74,21 @@ const setSuccess = element => {
     element.classList.remove('form-input-error')
 };
 
+/*Modal Demo*/
 
+const btnModalDemo = document.querySelector(".btn-modal-demo");
+const modal = document.querySelector(".modal-demo")
+const bodyOverlay = document.querySelector(".body-overlay-active")
+const btnModalCancel = document.querySelectorAll(".btn-modal-cancel")
+
+btnModalDemo.addEventListener("click",()=>{
+    bodyOverlay.style.display = "block"
+    modal.style.display = "flex"
+})
+
+btnModalCancel.forEach(btn=>{
+    btn.addEventListener("click",()=>{
+        bodyOverlay.style.display = "none"
+        modal.style.display = "none"
+    })
+})
