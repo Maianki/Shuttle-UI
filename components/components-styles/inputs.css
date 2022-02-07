@@ -25,7 +25,7 @@
 }
 
 input:focus{
-    border: 3px solid var( --PRIMARY-BTN-COLOR );
+    border: 1px solid var( --PRIMARY-BTN-COLOR );
 }
 
 /*CLASSES FOR CHECKBOXES AND RADIO BUTTONS*/
@@ -54,4 +54,11 @@ input:focus{
 
 .form-input-success{
     border: 3px solid var(--SUCCESS-BTN-COLOR);
+}
+
+/*Search Input*/
+
+.form-search{
+    padding: .8rem;
+    font-size: 1.6rem;
 }

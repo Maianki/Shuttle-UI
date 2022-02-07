@@ -17,7 +17,7 @@
 
     <nav class="nav-container flex-row ">
         <a class="navbar-brand flex-row" href="index.html">
-            <i class="btn-hamburger fas fa-bars"></i>
+            <div class="btn-hamburger"><i fas fa-bars"></i></div>
             <img class="site-logo" src="./docs-site/assets/logo.png" alt="logo">
         </a>
 
@@ -51,9 +51,8 @@
             <li class="sidenav-item"><a class="sidenav-link" href="#Input">Input</a></li>
 
             <li class="sidenav-item"><a class="sidenav-link" href="#Text-utilities">Text Utilities</a></li>
-
-            <li class="sidenav-item">
-                <a class="sidenav-link" href="#Lists">Lists</a>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Lists">Lists</a>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Navbar">Navbar</a></li>
             </li>
         </ul>
     </aside>
@@ -1719,6 +1718,90 @@
                             </pre>
 
                         </section>
+                <!--Navbar-->
+                <hr>
+                <h1 id="Navbar" class="component-heading">Navbar</h1>
+
+                <p class="intro-text"> Navbar includes different sections for brand logo, search input and navbar menu.
+                </p>
+
+                <p class="description">Shuttle UI navbar is responsive. It has a section for brand logo. The <span class="text-highlight">navbar-form</span> section includes a search bar which shrinks on smaller viewport size. The <span class="text-highlight">navbar-menu</span> section includes icon with nav menu links for navigation. Check the below HTML for navbar.</p>
+
+                <section class="example-container-align-horizontal">
+                    <nav class="navbar flex-row">
+                        <a class="navbar-brand" href="#">
+                            <img class="responsive-img navbar-logo" src="./components/assets/component-nav-logo.png" alt="">
+                        </a>
+                        <form class="navbar-form form-label-inline">
+                            <input class="form-search navbar-form" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+
+                        <ul class="navbar-menu list-unstyled flex-row">
+                            <li class="list-inline">
+                                <a class="flex-column menu-link" href="#">
+                                    login
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline">
+                                <a class="flex-column menu-link" href="#">
+                                    wishlist 
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                            </li>
+                                
+                            <li class="list-inline">
+                                <a class="flex-column menu-link" href="#">
+                                    cart
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                               
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                        <code class="html">
+                            &lt;nav class=&quot;navbar flex-row&quot;&gt;
+                                &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+                                    &lt;img class=&quot;responsive-img navbar-logo&quot; 
+                                    src=&quot;./components/assets/component-nav-logo.png&quot; alt=&quot;&quot;&gt;
+                                &lt;/a&gt;
+                                &lt;form class=&quot;navbar-form form-label-inline&quot;&gt;
+                                    &lt;input class=&quot;form-search navbar-form&quot; 
+                                    type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot;&gt;
+                                &lt;/form&gt;
+
+                                &lt;ul class=&quot;navbar-menu list-unstyled flex-row&quot;&gt;
+                                    &lt;li class=&quot;list-inline&quot;&gt;
+                                        &lt;a class=&quot;flex-column menu-link&quot; href=&quot;#&quot;&gt;
+                                            login
+                                            &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class=&quot;list-inline&quot;&gt;
+                                        &lt;a class=&quot;flex-column menu-link&quot; href=&quot;#&quot;&gt;
+                                            wishlist 
+                                            &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                        
+                                    &lt;li class=&quot;list-inline&quot;&gt;
+                                        &lt;a class=&quot;flex-column menu-link&quot; href=&quot;#&quot;&gt;
+                                            cart
+                                            &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+                                        &lt;/a&gt;
+                                    &lt;/li&gt;
+                                    
+                                &lt;/ul&gt;
+                            &lt;/nav&gt;
+                        </code>
+                    </pre>
+
+                </section>
+
 
 
     </main>

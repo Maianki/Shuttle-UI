@@ -3,14 +3,14 @@
     position: fixed;
     top:0;
     left: 0;
-    padding:12.5rem 1rem 1rem;
+    padding:10.5rem 1rem 5rem 1rem;
     margin-left:0;
-    font-size:2rem;
     line-height: 3.5rem;
     color: var(--PRIMARY-COLOR);
     max-height:100vh;
     height: 100%;
     box-shadow: 0 3px 6px var(--DEFAULT-CARD-SHADOW-1), 0 3px 6px var(--DEFAULT-CARD-SHADOW-2);
+    overflow-y: auto;
 }
 
 .sidenav-heading{
