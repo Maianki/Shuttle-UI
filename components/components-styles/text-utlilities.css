@@ -1,0 +1,98 @@
+/*Classes for heading*/
+
+.h1{
+    font-size: 3.2rem;
+    margin: 1rem;
+}
+
+.h2{
+    font-size:2.6rem;
+    margin: 1rem;
+}
+
+.h3{
+    font-size: 1.87rem;
+    margin: 1rem;
+}
+
+.h4{
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+.h5{
+    font-size: 1.328rem;
+    margin: 1rem;
+}
+
+.h6{
+    font-size: 1.072rem;
+    margin: 1rem;
+}
+
+/*Different sizes of text */
+
+.text-xs{
+    font-size: 1rem;
+    line-height: 2.4rem;
+}
+
+.text-sm{
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+}
+
+.text-md{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.text-lg{
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+}
+
+.text-xl{
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+}
+
+/*Different alignment for text*/
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+/*Some other utility classes*/
+.text-highlight{
+    color: var(--TEXT-HIGHLIGHT-COLOR);
+    font-weight: 500;
+}
+
+.text-gray{
+    color:var(--GRAY-COLOR)
+}
+
+.text-deleted{
+    text-decoration: line-through;
+}
+
+.text-decoration-underline{
+    text-decoration: underline;
+}
+
+.text-bold-500{
+    font-weight: 500;
+}
+
+.text-weight-700{
+    font-weight: 700;
+}

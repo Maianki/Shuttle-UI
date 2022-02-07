@@ -8,6 +8,8 @@
 @import url('card.css');
 @import url('images.css');
 @import url('inputs.css');
+@import url('text-utlilities.css');
+@import url('lists.css');
 
 html{
     font-family: 'Roboto', sans-serif;

@@ -17,12 +17,17 @@
     width: 25rem;
 }
 
+.navbar-links{
+    list-style: none;
+}
+
 .nav-link{
     color: var(--WHITE-COLOR);
     font-size: 1.6rem;
     padding: 0.5rem 1rem;
     transition: all .4s ease;
     border-radius:5px;
+    list-style: none;
 }
 
 .nav-link:hover {
@@ -45,6 +50,10 @@ footer{
     color: var(--WHITE-COLOR);
     text-align: center;
     width: 100vw;
+}
+
+.footer-links{
+    list-style: none;
 }
 
 .navbar-brand{

@@ -1,6 +1,7 @@
 :root{
     --WHITE-COLOR:#FFF;
     --MYRTEL-GREEN-COLOR: #307473;
+    --GRAY-COLOR:	#A9A9A9;
     --DEFAULT-CARD-SHADOW-1: rgba(0,0,0,0.16);
     --DEFAULT-CARD-SHADOW-2: rgba(0,0,0,0.23);
     --CARD-HOVER-SHADOW-1:rgba(0,0,0,0.12);
@@ -150,7 +151,28 @@
 
 /*Clas to add alternate shadow to cards*/
   
-  .card-shadow-alternate {
+.card-shadow-alternate {
     box-shadow: 0 19px 38px var(--ALTRNATE-CARD-SHADOW-1), 0 15px 12px var(--ALTRNATE-CARD-SHADOW-2);
   }
   
+
+  /*notification card*/
+.card-notification{
+    width:35rem;
+    box-shadow: 0 3px 6px var(--DEFAULT-CARD-SHADOW-1), 0 3px 6px var(--DEFAULT-CARD-SHADOW-2);
+    padding: .5rem 1rem;
+    margin: 1.5rem;
+}
+
+.card-notification-img{
+    width: 6rem;
+    height: 100%;
+}
+
+.card-notification-header{
+    align-items: center;
+}
+
+.card-notification-desc{
+    font-size: 1.5rem;
+}
