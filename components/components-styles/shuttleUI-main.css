@@ -10,6 +10,7 @@
 @import url('inputs.css');
 @import url('text-utlilities.css');
 @import url('lists.css');
+@import url('navbar.css');
 
 html{
     font-family: 'Roboto', sans-serif;
