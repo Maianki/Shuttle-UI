@@ -21,7 +21,7 @@
             <img class="site-logo" src="./docs-site/assets/logo.png" alt="logo">
         </a>
 
-        <ul class="flex-row">
+        <ul class="flex-row navbar-links">
             <li>
                 <a class="nav-link md-ht-1" href="docs.html"><i class="fab fa-dochub"></i>ocumentation</a>
             </li>
@@ -38,10 +38,10 @@
     <aside class="sidenav">
         <ul class="sidenav-nav">
             <li class="sidenav-heading sidenav-item">Get Started</li>
-            <li class="sidenav-item" ><a class="sidenav-link" href="#Getting-started">Installation</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Getting-started">Installation</a></li>
             <hr class="sidenav-hr">
             <li class="sidenav-heading sidenav-item ">Components</li>
-            <li class="sidenav-item" ><a class="sidenav-link" href="#Alerts">Alert</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Alerts">Alert</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Avatar">Avatar</a>
             </li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Badge">Badge</a></li>
@@ -49,6 +49,12 @@
             <li class="sidenav-item"><a class="sidenav-link" href="#Cards">Card</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Image">Image</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Input">Input</a></li>
+
+            <li class="sidenav-item"><a class="sidenav-link" href="#Text-utilities">Text Utilities</a></li>
+
+            <li class="sidenav-item">
+                <a class="sidenav-link" href="#Lists">Lists</a>
+            </li>
         </ul>
     </aside>
 
@@ -107,8 +113,8 @@
 
         <h2>Simple Alert</h2>
         <p class="description">There are six different types of alerts. Use class-name <span
-                class="highlight">alert</span> and add another class-name for type of alert like <span
-                class="highlight">alert-success</span> to give it more meaning.</p>
+                class="text-highlight">alert</span> and add another class-name for type of alert like <span
+                class="text-highlight">alert-success</span> to give it more meaning.</p>
 
         <section class="example-container">
             <div class="alert alert-primary">
@@ -169,7 +175,8 @@
         <!--Alerts with Icons-->
 
         <h2>Alerts with icon</h2>
-        <p class="description">Alert can have icon along with the text. Add <span class="highlight">align-center</span>
+        <p class="description">Alert can have icon along with the text. Add <span
+                class="text-highlight">align-center</span>
             utility class to align text and icon inside alert.</p>
 
         <section class="example-container">
@@ -232,9 +239,9 @@
 
         <h2>Round avatars</h2>
 
-        <p class="description">To use round avatars add class-name <span class="highlight">avatar</span> and <span
-                class="highlight">avatar-round.</span> And to adjust size you need to include <span
-                class="highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span> class-name.</p>
+        <p class="description">To use round avatars add class-name <span class="text-highlight">avatar</span> and <span
+                class="text-highlight">avatar-round.</span> And to adjust size you need to include <span
+                class="text-highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span> class-name.</p>
 
         <section class="example-container-align-horizontal">
             <div>
@@ -286,9 +293,10 @@
         </section>
 
         <h2>Square avatars</h2>
-        <p class="description">To use square avatars add class-name <span class="highlight">avatar-square</span> along
-            with class-name<span class="highlight"> avatar.</span> And to adjust size you need to include <span
-                class="highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span> class-name.</p>
+        <p class="description">To use square avatars add class-name <span class="text-highlight">avatar-square</span>
+            along
+            with class-name<span class="text-highlight"> avatar.</span> And to adjust size you need to include <span
+                class="text-highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span> class-name.</p>
         <section class="example-container-align-horizontal">
             <div>
                 <img src="./components/assets/avatar-girl.jpg" class="avatar avatar-square avatar-lg"
@@ -340,8 +348,10 @@
         <!--Avatars with initials-->
         <h2>Avatars with initials/Text</h2>
         <p class="description">Avatars that display text or initials. To use text avatar include <span
-                class="highlight">avatar-text</span> class-name along with <span class="highlight">avatar</span> And to
-            adjust size you need to include <span class="highlight">avatar-lg, avatar-md, avatar-sm or avatar-xs</span>
+                class="text-highlight">avatar-text</span> class-name along with <span
+                class="text-highlight">avatar</span> And to
+            adjust size you need to include <span class="text-highlight">avatar-lg, avatar-md, avatar-sm or
+                avatar-xs</span>
             class-name.</p>
 
         <section class="example-container-align-horizontal">
@@ -394,7 +404,7 @@
         <h2>Badges on text</h2>
 
         <p class="description">Text badge will resize themselves as per the size of the text. To use badge on text add
-            class-name <span class="highlight"> badge</span>.</p>
+            class-name <span class="text-highlight"> badge</span>.</p>
         <section class="example-container">
             <h1>Badge on heading 1 <span class="badge">New</span></h1>
             <h2>Badge on heading 2 <span class="badge">New</span></h2>
@@ -420,8 +430,10 @@
         <h2>Badges on icons</h2>
 
         <p class="description">Badge can be used with icons such as notification bell or shopping cart. To add icon on
-            badge use <span class="highlight"> badge-container</span> class-name on parent container/element. And use
-            <span class="highlight"> badge</span> along with <span class="highlight"> badge-icon</span> class-name on
+            badge use <span class="text-highlight"> badge-container</span> class-name on parent container/element. And
+            use
+            <span class="text-highlight"> badge</span> along with <span class="text-highlight"> badge-icon</span>
+            class-name on
             badge element.</p>
         <section class="example-container-align-horizontal">
             <div><i class="badge-container fas fa-bell fa-3x"><span class="badge badge-icon">5</span></i></div>
@@ -441,9 +453,9 @@
             <h2>Badges on Avatars</h2>
 
             <p class="description">Badges on avatars are used to show online/offline status. Use class-name <span
-                    class="highlight">badge-container</span> on parent container/element. And use <span
-                    class="highlight"> badge-online, badge-offline, badge-dnd or badge-last-seen</span> along with
-                class-name <span class="highlight"> badge </span> on the element as per need.</p>
+                    class="text-highlight">badge-container</span> on parent container/element. And use <span
+                    class="text-highlight"> badge-online, badge-offline, badge-dnd or badge-last-seen</span> along with
+                class-name <span class="text-highlight"> badge </span> on the element as per need.</p>
             <section class="example-container-align-horizontal">
                 <div class="badge-container">
                     <img src="./components/assets/avatar-girl.jpg" class=" avatar avatar-round avatar-lg"
@@ -503,8 +515,8 @@
             <h2>Solid Buttons</h2>
 
             <p class="description">These buttons are used for primary actions in websites. To add a primary button use
-                class-name <span class="highlight"> btn </span> along with variant class-name such as <span
-                    class="highlight"> btn-primary, btn-secondary, btn-success, btn-danger, btn-warning or
+                class-name <span class="text-highlight"> btn </span> along with variant class-name such as <span
+                    class="text-highlight"> btn-primary, btn-secondary, btn-success, btn-danger, btn-warning or
                     btn-info.</span></p>
 
             <section class="example-container-align-horizontal">
@@ -532,7 +544,8 @@
             <h2>Outline Buttons</h2>
 
             <p class="description">These are buttons with minimal styling. To add outline buttons use class-name <span
-                    class="highlight"> btn </span> along with variant class-name such as <span class="highlight">
+                    class="text-highlight"> btn </span> along with variant class-name such as <span
+                    class="text-highlight">
                     btn-outline-primary, btn-outline-secondary, btn-outline-success, btn-outline-danger,
                     btn-outline-warning or btn-outline-info.</span> </p>
 
@@ -561,8 +574,8 @@
             <h2>Link Buttons</h2>
 
             <p class="description">You can also make anchor element as a button. To make anchor button add <span
-                    class="highlight"> btn </span>class-name along with a variant of button and give it a <span
-                    class="highlight"> role="button" </span>for accessibility purpose.</p>
+                    class="text-highlight"> btn </span>class-name along with a variant of button and give it a <span
+                    class="text-highlight"> role="button" </span>for accessibility purpose.</p>
 
             <section class="example-container-align-horizontal">
                 <a class="btn btn-primary" href="#" role="button">Link Primary</a>
@@ -616,8 +629,9 @@
 
             <h2>Floating action Button</h2>
 
-            <p class="description">Floating action button can be used by adding <span class="highlight">btn </span>
-                class-name along with <span class="highlight">btn-fab</span>. This button will be fixed to right-bottom
+            <p class="description">Floating action button can be used by adding <span class="text-highlight">btn </span>
+                class-name along with <span class="text-highlight">btn-fab</span>. This button will be fixed to
+                right-bottom
                 corner.</p>
 
             <section class="example-container-align-horizontal">
@@ -640,7 +654,8 @@
 
             <h2>Cards with Badges</h2>
             <p class="description">All cards follow same template in shuttle UI. To make a card use class-name <span
-                    class="highlight">card</span> in your main container. Cards with badge use badge component to add a
+                    class="text-highlight">card</span> in your main container. Cards with badge use badge component to
+                add a
                 badge on top of the image. Copy the below code snippet, put text and image of your own and you are good
                 to go.</p>
 
@@ -724,9 +739,9 @@
             <!--Horizontal cards-->
             <h2>Horizontal Cards</h2>
             <p class="description">Horizontal cards are there to add diversity in card components. They come up with two
-                button elements. Use class-name <span class="highlight">card-horizontal</span> along with <span
-                    class="highlight">card in main container</span>. And add <span
-                    class="highlight">card-horizontal-img</span> class-name in image element. Copy the below
+                button elements. Use class-name <span class="text-highlight">card-horizontal</span> along with <span
+                    class="text-highlight">card in main container</span>. And add <span
+                    class="text-highlight">card-horizontal-img</span> class-name in image element. Copy the below
                 code-snippet to use card component in your project.</p>
 
             <section class="example-container">
@@ -781,7 +796,8 @@
             <h2>Cards with Dismiss</h2>
             <p class="description"> Card with dismiss comes with a cross button on right side of the card. To add
                 dismiss you would have to add font-awesome icon and give it a class-name of <span
-                    class="highlight">card-dismiss</span>. Copy the below-code snippet to use cards with dismiss.</p>
+                    class="text-highlight">card-dismiss</span>. Copy the below-code snippet to use cards with dismiss.
+            </p>
 
             <section class="example-container-align-horizontal">
                 <div class="card align-items-center">
@@ -902,16 +918,16 @@
             <!--Text only cards-->
             <h2>Text only Cards</h2>
             <p class="description">Text only cards are the simplest cards available. You can align-text in the body
-                using utility classes like <span class="highlight">align-text-left, align-text-center and
+                using utility classes like <span class="text-highlight">align-text-left, align-text-center and
                     align-text-right</span>. You can also add buttons in text only cards by adding button components at
                 the footer of the card.</p>
 
             <section class="example-container-align-horizontal">
                 <div class="card align-items-center">
-                    <div class="card-header align-text-left">
+                    <div class="card-header text-left">
                         <h3>Card Title</h3>
                     </div>
-                    <div class="card-body align-text-center">
+                    <div class="card-body text-center">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim totam sint, cum illo quasi
                             autem quas eum exercitationem fugiat eligendi!</p>
                     </div>
@@ -926,10 +942,10 @@
                 <pre>
                 <code class="html">
                     &lt;div class=&quot;card align-items-center&quot;&gt;
-                        &lt;div class=&quot;card-header align-text-left&quot;&gt;
+                        &lt;div class=&quot;card-header text-left&quot;&gt;
                         &lt;h3&gt;Card Title&lt;/h3&gt;
                         &lt;/div&gt;
-                        &lt;div class=&quot;card-body align-text-center&quot;&gt;
+                        &lt;div class=&quot;card-body text-center&quot;&gt;
                             &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Enim totam sint, cum illo quasi autem quas eum exercitationem fugiat eligendi!&lt;/p&gt;
                         &lt;/div&gt;
@@ -945,7 +961,7 @@
             <!--Cards with shadow-->
             <h2>Card With shadow</h2>
             <p class="description"> Although all cards in Shuttle UI comes with shadow but you can use alternate shadow
-                using class-name <span class="highlight">card-shadow-alternate</span> in the main container.</p>
+                using class-name <span class="text-highlight">card-shadow-alternate</span> in the main container.</p>
 
             <section class="example-container-align-horizontal">
                 <div class="card align-items-center card-shadow-alternate">
@@ -995,10 +1011,11 @@
             <p class="intro-text">Images are made responsive so that it takes width of the enclosed container.</p>
 
             <h2>Responsive images</h2>
-            <p class="description">To make images responsive add class <span class="highlight">responsive-img</span> in
+            <p class="description">To make images responsive add class <span
+                    class="text-highlight">responsive-img</span> in
                 the img tag. If you are using picture tag make sure you add the <span
-                    class="highlight">responsive-img</span> class in img element and not on picture element. <span
-                    class="highlight">Resize the screen to see the responsiveness of image</span>. </p>
+                    class="text-highlight">responsive-img</span> class in img element and not on picture element. <span
+                    class="text-highlight">Resize the screen to see the responsiveness of image</span>. </p>
 
             <section class="example-container-align-horizontal">
                 <picture>
@@ -1022,8 +1039,10 @@
             </section>
 
             <h2>Round images</h2>
-            <p class="description"> You can make images round by adding <span class="highlight">round-img</span> class
-                to img tag. Round images comes in three different sizes. Add <span class="highlight">round-lg, round-md
+            <p class="description"> You can make images round by adding <span class="text-highlight">round-img</span>
+                class
+                to img tag. Round images comes in three different sizes. Add <span class="text-highlight">round-lg,
+                    round-md
                     round-sm</span> classes to set size on round images.</p>
 
             <section class="example-container-align-horizontal">
@@ -1052,8 +1071,8 @@
             <h2>Textbox</h2>
             <p class="description">Text input fields are typically used to take data such as firstname, lastname,
                 fullname and feedback/comment. You can change size of the input box using <span
-                    class="highlight">form-input-lg and form-input-md</span> along with <span
-                    class="highlight">form-input</span> class.</p>
+                    class="text-highlight">form-input-lg and form-input-md</span> along with <span
+                    class="text-highlight">form-input</span> class.</p>
 
             <section class="example-container">
                 <form>
@@ -1113,7 +1132,7 @@
             </section>
 
             <h2>Checkbox, radio and select inputs</h2>
-            <p class="description">Add class <span class="highlight">form-check</span> in parent container to align
+            <p class="description">Add class <span class="text-highlight">form-check</span> in parent container to align
                 checkboxes and radio with their respective labels.</p>
 
             <section class="example-container">
@@ -1186,8 +1205,9 @@
 
             <h2>Inputs with default validation</h2>
             <p class="description">You can add default validation in form by adding required attribute in input fields.
-                If you are adding default validation make sure you use appropriate type. <span class="highlight">For
-                    e.g</span> for email use <span class="highlight">type="email"</span>.</p>
+                If you are adding default validation make sure you use appropriate type. <span
+                    class="text-highlight">For
+                    e.g</span> for email use <span class="text-highlight">type="email"</span>.</p>
 
             <section class="example-container">
                 <form>
@@ -1249,8 +1269,10 @@
 
             <h2>Input with custom validation and error style</h2>
             <p class="description">Shuttle UI comes with custom validation and error styling on form fields. To add
-                custom validation add <span class="highlight">no-validate</span> boolean attribute in form tag and use
-                class <span class="highlight">form-validation</span>. Make sure to add Shuttle UI JS script if you are
+                custom validation add <span class="text-highlight">no-validate</span> boolean attribute in form tag and
+                use
+                class <span class="text-highlight">form-validation</span>. Make sure to add Shuttle UI JS script if you
+                are
                 using custom validation. Copy the below code snipppet to add custom validation in form fields.
                 <section class="example-container">
                     <form class="form-validation" action="#" novalidate>
@@ -1314,25 +1336,392 @@
                         
                         &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary form-btn&quot;&gt;Sign Up&lt;/button&gt; 
                     &lt;/form&gt;
-               </code>
-           </pre>
+                </code>
+                </pre>
                 </section>
 
-    </main>
+                <hr>
+                <!--Text Utilities-->
+                <h1 id="Text-utilities" class="component-heading">Text Utilities</h1>
 
-    <footer class="footer align-items-center flex-column">
-        <p class="footer-description md-vt-1">Made by <span class="designed-by">Ankit Kumain</span></p>
-        <ul class="flex-row">
-            <li>
-                <a class="nav-link md-ht-1" href="https://github.com/Maianki/Shuttle-UI"><i
-                        class="fab fa-github-square"></i></a>
-            </li>
-            <li>
-                <a class="nav-link md-ht-1" href="https://twitter.com/Ankit_k10"><i
-                        class="fab fa-twitter-square"></i></a>
-            </li>
-        </ul>
-    </footer>
+                <p class="intro-text">You can use various text utilites to change display of the text.</p>
+
+                <h2>Headings</h2>
+                <p class="description">We provide some basic styling for header tags you need to use <span
+                        class="text-highlight">h1, h2, h3, h4, h5, h6</span> elements. You can also use <span
+                        class="text-highlight">.h1, .h2 , .h3, .h4, .h5, .h6</span> classes, when you want the font
+                    styling of a heading but cannot use the HTML elements.</p>
+
+                <section class="example-container">
+                    <h1>h1. Shuttle UI heading</h1>
+                    <h2>h2. Shuttle UI heading</h2>
+                    <h3>h3. Shuttle UI heading</h3>
+                    <h4>h4. Shuttle UI heading</h4>
+                    <h5>h5. Shuttle UI heading</h5>
+                    <h6>h6. Shuttle UI heading</h6>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                    <code class="html">
+                        &lt;h1&gt;h1. Shuttle UI heading&lt;/h1&gt;
+                        &lt;h2&gt;h2. Shuttle UI heading&lt;/h2&gt;
+                        &lt;h3&gt;h3. Shuttle UI heading&lt;/h3&gt;
+                        &lt;h4&gt;h4. Shuttle UI heading&lt;/h4&gt;
+                        &lt;h5&gt;h5. Shuttle UI heading&lt;/h5&gt;
+                        &lt;h6&gt;h6. Shuttle UI heading&lt;/h6&gt;
+                    </code>
+                </pre>
+                </section>
+
+                <h2>Different sizes of text</h2>
+                <p class="description">You can also make your text of different sizes. Shuttle UI has mainly four
+                    sizes<span class="text-highlight">text-xs, text-sm, text-md, text-lg and text-xl</span>.</p>
+
+                <section class="example-container">
+                    <p class="text-xs">Example of xtra-small size text</p>
+                    <p class="text-sm">Example of small size text</p>
+                    <p class="text-md">Example of medium size text</p>
+                    <p class="text-lg">Example of large size text</p>
+                    <p class="text-xl">Example of Xtra-Large size text</p>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                    <code>
+                        &lt;p class=&quot;text-xs&quot;&gt;Example of xtra-small size text&lt;/p&gt;
+                        &lt;p class=&quot;text-sm&quot;&gt;Example of small size text&lt;/p&gt;
+                        &lt;p class=&quot;text-md&quot;&gt;Example of medium size text&lt;/p&gt;
+                        &lt;p class=&quot;text-lg&quot;&gt;Example of large size text&lt;/p&gt;
+                        &lt;p class=&quot;text-xl&quot;&gt;Example of Xtra-Large size text&lt;/p&gt;
+                    </code>
+                </pre>
+                </section>
+
+                <h2>Different alignment for text</h2>
+                <p class="description">Use the following class to align text left, center or right, <span
+                        class="text-highlight">text-left, text-center, and text-right</span>.</p>
+
+                <section class="example-container">
+                    <p class="text-left">This paragraph text has left alignment</p>
+                    <p class="text-center">This paragraph text is center aligned</p>
+                    <p class="text-right">This paragraph text has right alignment</p>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                    <code>
+                        &lt;p class=&quot;text-left&quot;&gt;This paragraph text has left alignment&lt;/p&gt;
+                        &lt;p class=&quot;text-center&quot;&gt;This paragraph text is center aligned&lt;/p&gt;
+                        &lt;p class=&quot;text-right&quot;&gt;This paragraph text has right alignment&lt;/p&gt;
+                    </code>
+                </pre>
+                </section>
+
+                <h2>Some other utility classes for text</h2>
+                <p class="description">You can also make your text highlight, gray, delete, underline and bold by using
+                    corresponding classes - <span class="text-highlight">text-highlight, text-gray, text-delete,
+                        text-decoration-underline, text-bold-500 and text-bold-700</span>.</p>
+
+                <section class="example-container">
+                    <p class="text-highlight">This is a highlighted text</p>
+                    <p class="text-gray">This is a gray text</p>
+                    <p class="text-deleted">This is a deleted text</p>
+                    <p class="text-decoration-underline">This is an underlined text</p>
+                    <p class="text-bold-500">This is a bold text with weight 500</p>
+                    <p class="text-bold-700">This is a bold text with weight 700</p>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                    <code>
+                        &lt;p class=&quot;text-highlight&quot;&gt;This is a highlighted text&lt;/p&gt;
+                        &lt;p class=&quot;text-gray&quot;&gt;This is a gray text&lt;/p&gt;
+                        &lt;p class=&quot;text-deleted&quot;&gt;This is a deleted text&lt;/p&gt;
+                        &lt;p class=&quot;text-decoration-underline&quot;&gt;This is an underlined text&lt;/p&gt;
+                        &lt;p class=&quot;text-bold-500&quot;&gt;This is a bold text with weight 500&lt;/p&gt;
+                        &lt;p class=&quot;text-bold-700&quot;&gt;This is a bold text with weight 700&lt;/p&gt;
+                    </code>
+                </pre>
+                </section>
+
+                <hr>
+
+                <!--Lists-->
+                <h1 id="Lists" class="component-heading">Lists</h1>
+
+                <p class="intro-text">Lists are group of continuous text or images. It helps in grouping similar items.
+                </p>
+
+                <h2>Unordered List</h2>
+                <p class="description">Unordered list comes with different variant of items marker. Add class <span
+                        class="text-highlight">list-decoration-square</span> to get square bullet style. Similarly, you
+                    can also make your unordered list marker circle or disc by adding <span
+                        class="text-highlight">list-decoration-circle and list-decoration-disc</span> classes.</p>
+
+                <section class="example-container-align-horizontal">
+                    <ul class="list-decoration-square">
+                        <li>Square marker unordered list</li>
+                        <li>Square marker unordered list</li>
+                        <li>Square marker unordered list</li>
+                    </ul>
+
+                    <ul class="list-decoration-circle">
+                        <li>circle marker unordered list</li>
+                        <li>circle marker unordered list</li>
+                        <li>circle marker unordered list</li>
+                    </ul>
+
+                    <ul class="list-decoration-circle">
+                        <li>disc marker unordered list</li>
+                        <li>disc marker unordered list</li>
+                        <li>disc marker unordered list</li>
+                    </ul>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                    <code class="html">
+                        &lt;ul class=&quot;list-decoration-square&quot;&gt;
+                        &lt;li&gt;Square marker unordered list&lt;/li&gt;
+                        &lt;li&gt;Square marker unordered list&lt;/li&gt;
+                        &lt;li&gt;Square marker unordered list&lt;/li&gt;
+                        &lt;/ul&gt;
+                            
+                        &lt;ul class=&quot;list-decoration-circle&quot;&gt;
+                        &lt;li&gt;circle marker unordered list&lt;/li&gt;
+                        &lt;li&gt;circle marker unordered list&lt;/li&gt;
+                        &lt;li&gt;circle marker unordered list&lt;/li&gt;
+                        &lt;/ul&gt;
+    
+                        &lt;ul class=&quot;list-decoration-circle&quot;&gt;
+                        &lt;li&gt;disc marker unordered list&lt;/li&gt;
+                        &lt;li&gt;disc marker unordered list&lt;/li&gt;
+                        &lt;li&gt;disc marker unordered list&lt;/li&gt;
+                        &lt;/ul&gt;
+                    </code>
+                </pre>
+                </section>
+
+                <h2>Ordered List</h2>
+                <p class="description">Ordered list also comes with different variant of items marker. Use one ot the
+                    following class modifier <span class="text-highlight">list-decoration-ualpha,
+                        list-decoration-lalpha, list-decoration-uroman, list-decoration-lroman</span> to style ordered
+                    list markers.
+                    <section class="example-container-align-horizontal">
+                        <ol class="list-decoration-ualpha">
+                            <li>Upper-case alphabets marker ordered list</li>
+                            <li>Upper-case alphabets marker ordered list</li>
+                            <li>Upper-case alphabets marker ordered list</li>
+                        </ol>
+
+                        <ol class="list-decoration-lalpha">
+                            <li>Lower-case alphabets marker ordered list</li>
+                            <li>Lower-case alphabets marker ordered list</li>
+                            <li>Lower-case alphabets marker ordered list</li>
+                        </ol>
+
+                        <ol class="list-decoration-uroman">
+                            <li>Upper-case roman marker ordered list</li>
+                            <li>Upper-case roman marker ordered list</li>
+                            <li>Upper-case roman marker ordered list</li>
+                        </ol>
+
+                        <ol class="list-decoration-lroman">
+                            <li>Lower-case roman marker ordered list</li>
+                            <li>Lower-case roman marker ordered list</li>
+                            <li>Lower-case roman marker ordered list</li>
+                        </ol>
+
+                        <ol>
+                            <li>Numbered ordered list</li>
+                            <li>Numbered ordered list</li>
+                            <li>Numbered ordered list</li>
+                        </ol>
+
+                    </section>
+
+                    <section class="code-container">
+                        <pre>
+                        <code>
+                            &lt;ol class=&quot;list-decoration-ualpha&quot;&gt;
+                                &lt;li&gt;Upper-case alphabets marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Upper-case alphabets marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Upper-case alphabets marker ordered list&lt;/li&gt;
+                            &lt;/ol&gt;
+                                
+                            &lt;ol class=&quot;list-decoration-lalpha&quot;&gt;
+                                &lt;li&gt;Lower-case alphabets marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Lower-case alphabets marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Lower-case alphabets marker ordered list&lt;/li&gt;
+                            &lt;/ol&gt;
+
+                            &lt;ol class=&quot;list-decoration-uroman&quot;&gt;
+                                &lt;li&gt;Upper-case roman marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Upper-case roman marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Upper-case roman marker ordered list&lt;/li&gt;
+                            &lt;/ol&gt;
+
+                            &lt;ol class=&quot;list-decoration-lroman&quot;&gt;
+                                &lt;li&gt;Lower-case roman marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Lower-case roman marker ordered list&lt;/li&gt;
+                                &lt;li&gt;Lower-case roman marker ordered list&lt;/li&gt;
+                            &lt;/ol&gt;
+
+                            &lt;ol&gt;
+                                &lt;li&gt;Numbered ordered list&lt;/li&gt;
+                                &lt;li&gt;Numbered ordered list&lt;/li&gt;
+                                &lt;li&gt;Numbered ordered list&lt;/li&gt;
+                            &lt;/ol&gt;
+                        </code>
+                    </pre>
+                    </section>
+
+                    <h2>Inline, Unstyled lists and reversed list</h2>
+                    <p class="description">Make your lists unstyled by adding class <span
+                            class="text-highlight">list-unstyled</span> and make list inline by adding class <span
+                            class="text-highlight">list-inline</span>.
+
+                        <section class="example-container">
+
+                            <ol>
+                                <li class="list-inline">Example of inline list</li>
+                                <li class="list-inline">Example of inline list</li>
+                                <li class="list-inline">Example of inline list</li>
+                            </ol>
+
+                            <ol class="list-unstyled">
+                                <li>Example of unstyled list</li>
+                                <li>Example of unstyled list</li>
+                                <li>Example of unstyled list</li>
+
+                                <ol reversed>
+                                    <li>Reverse ordered list</li>
+                                    <li>Reverse ordered list</li>
+                                    <li>Reverse ordered list</li>
+                                </ol>
+                        </section>
+
+                        <section class="code-container">
+                            <pre>
+                                <code class="html">
+                                    &lt;ol&gt;
+                                    &lt;li class=&quot;list-inline&quot;&gt;Example of inline list&lt;/li&gt;
+                                    &lt;li class=&quot;list-inline&quot;&gt;Example of inline list&lt;/li&gt;
+                                    &lt;li class=&quot;list-inline&quot;&gt;Example of inline list&lt;/li&gt;
+                                    &lt;/ol&gt;
+
+                                    &lt;ol class=&quot;list-unstyled&quot;&gt;
+                                    &lt;li&gt;Example of unstyled list&lt;/li&gt;
+                                    &lt;li&gt;Example of unstyled list&lt;/li&gt;
+                                    &lt;li&gt;Example of unstyled list&lt;/li&gt;
+
+                                    &lt;ol reversed&gt;
+                                    &lt;li&gt;Reverse ordered list&lt;/li&gt;
+                                    &lt;li&gt;Reverse ordered list&lt;/li&gt;
+                                    &lt;li&gt;Reverse ordered list&lt;/li&gt;
+                                    &lt;/ol&gt;
+                                </code>
+                            </pre>
+                        </section>
+                    <h2>Stacked List</h2>
+                    <p class="description">A List can contain a card/image/text, making stacks of item, they are primarily used in notification and shopping cart checkout. Check the below HTML for stacking list.
+                        <section class="example-container-align-horizontal">
+                            <ol class="list-unstyled">
+                                <li>
+                                    <div class="card-notification">
+                                        <div class="card-notification-header flex-row">
+                                            <img class="card-notification-img" src="./components/assets/discount.png" alt="discount">
+                                            <p class="md-ht-1 card-notification-desc"> <span class="text-bold-500">50% OFF</span> in all Yonex racquets. Don't Miss it!</p>
+                                        </div>
+                                        
+                                        <div class="card-footer text-right">
+                                            <p class="text-xs text-highlight">9:10 am</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-notification">
+                                        <div class="card-notification-header flex-row">
+                                            <img class="card-notification-img" src="./components/assets/delivered.png" alt="discount">
+                                            <p class="md-ht-1 card-notification-desc"> Your order <span class="text-bold-500">#124567</span> Delivered to your home.</p>
+                                        </div>
+                                        
+                                        <div class="card-footer text-right">
+                                            <p class="text-xs text-highlight">9:05 am</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-notification">
+                                        <div class="card-notification-header flex-row">
+                                            <img class="card-notification-img" src="./components/assets/delivered.png" alt="discount">
+                                            <p class="md-ht-1 card-notification-desc"> Your order <span class="text-bold-500">#124568</span> Delivered to your home.</p>
+                                        </div>
+                                        
+                                        <div class="card-footer text-right">
+                                            <p class="text-xs text-highlight">9:02 am</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section class="code-container">
+                            <pre>
+                                <code class="html">
+                                    &lt;ol class=&quot;list-unstyled&quot;&gt;
+                                        &lt;li&gt;
+                                            &lt;div class=&quot;card-notification&quot;&gt;
+                                                &lt;div class=&quot;card-notification-header flex-row&quot;&gt;
+                                                    &lt;img class=&quot;card-notification-img&quot; 
+                                                    src=&quot;./components/assets/discount.png&quot; alt=&quot;discount&quot;&gt;
+                                                    &lt;p class=&quot;md-ht-1 card-notification-desc&quot;&gt; &lt;span class=&quot;text-bold-500&quot;&gt;50% OFF
+                                                    &lt;/span&gt; in all Yonex racquets. Don&apos;t Miss it!&lt;/p&gt;
+                                                &lt;/div&gt;
+                                                
+                                                &lt;div class=&quot;card-footer text-right&quot;&gt;
+                                                    &lt;p class=&quot;text-xs text-highlight&quot;&gt;9:10 am&lt;/p&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;div class=&quot;card-notification&quot;&gt;
+                                                &lt;div class=&quot;card-notification-header flex-row&quot;&gt;
+                                                    &lt;img class=&quot;card-notification-img&quot;
+                                                    src=&quot;./components/assets/delivered.png&quot; alt=&quot;discount&quot;&gt;
+                                                    &lt;p class=&quot;md-ht-1 card-notification-desc&quot;&gt; Your order 
+                                                    &lt;span class=&quot;text-bold-500&quot;&gt;#124567&lt;/span&gt; Delivered to your home.&lt;/p&gt;
+                                                &lt;/div&gt;
+                                                
+                                                &lt;div class=&quot;card-footer text-right&quot;&gt;
+                                                    &lt;p class=&quot;text-xs text-highlight&quot;&gt;9:05 am&lt;/p&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;
+                                            &lt;div class=&quot;card-notification&quot;&gt;
+                                                &lt;div class=&quot;card-notification-header flex-row&quot;&gt;
+                                                    &lt;img class=&quot;card-notification-img&quot; 
+                                                    src=&quot;./components/assets/delivered.png&quot; alt=&quot;discount&quot;&gt;
+                                                    &lt;p class=&quot;md-ht-1 card-notification-desc&quot;&gt; 
+                                                    Your order &lt;span class=&quot;text-bold-500&quot;&gt;#124568&lt;/span&gt; Delivered to your home.&lt;/p&gt;
+                                                &lt;/div&gt;
+                                                
+                                                &lt;div class=&quot;card-footer text-right&quot;&gt;
+                                                    &lt;p class=&quot;text-xs text-highlight&quot;&gt;9:02 am&lt;/p&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ol&gt;
+
+                                </code>
+                            </pre>
+
+                        </section>
+
+
+    </main>
 
     <script src="./components/componentsJS/shuttleui-script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>

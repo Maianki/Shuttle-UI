@@ -29,6 +29,7 @@
     height:auto;
     flex-wrap: wrap;
     overflow-x: auto;
+    gap: 2rem;
     align-items: center;
     justify-content: space-around;
     background-color: var(--GREY-COLOR-2);
@@ -49,12 +50,6 @@
 .intro-text{
     font-size: 2.2rem;
     margin: 1rem 1rem 2.5rem 1rem;
-}
-
-.highlight{
-    color: var(--TEXT-HIGHLIGHT-COLOR);
-    padding: 0 .5rem;
-    border-radius: 5px;
 }
 
 .code-container{

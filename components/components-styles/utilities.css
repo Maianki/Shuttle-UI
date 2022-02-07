@@ -32,6 +32,7 @@ h6{
 
 p{
     font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 /*UTILITIY CLASSES*/
@@ -105,18 +106,6 @@ p{
   
 .pd-ht-2 {
     padding: 0 2rem;
-}
-
-.align-text-center{
-    text-align: center;
-}
-
-.align-text-left{
-    text-align: left;
-}
-
-.align-text-right{
-    text-align: right;
 }
 
 /*FLEX UTILITY CLASSES*/

@@ -4,6 +4,7 @@
     top:0;
     left: 0;
     padding:12.5rem 1rem 1rem;
+    margin-left:0;
     font-size:2rem;
     line-height: 3.5rem;
     color: var(--PRIMARY-COLOR);

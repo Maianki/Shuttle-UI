@@ -1,0 +1,51 @@
+ul,
+ol{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 1.6rem;
+}
+
+/*classes for list decorations*/
+
+.list-decoration-square{
+    list-style: square;
+}
+
+.list-decoration-circle{
+    list-style: circle;
+}
+
+.list-decoration-disc{
+    list-style: disc;
+}
+
+/*classes for ordered list decorations*/
+.list-decoration-uroman{
+    list-style: upper-roman;
+}
+
+.list-decoration-lroman{
+    list-style: lower-roman;
+}
+
+.list-decoration-ualpha{
+    list-style: upper-alpha;
+}
+
+.list-decoration-lalpha{
+    list-style: lower-alpha;
+}
+
+
+/*unstyled and inline lists*/
+
+.list-inline{
+    display: inline-block;  
+    margin: 1rem; 
+}
+
+.list-unstyled{
+    list-style: none;
+}
+
+
