@@ -54,6 +54,8 @@
             <li class="sidenav-item"><a class="sidenav-link" href="#Lists">Lists</a>
             <li class="sidenav-item"><a class="sidenav-link" href="#Navbar">Navbar</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Modal">Modal</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Rating">Rating</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Snackbar">Snackbar</a></li>
             </li>
         </ul>
     </aside>
@@ -1897,6 +1899,172 @@
                     </pre>
                 </section>
 
+                 <!--Rating-->
+
+                 <hr>
+                 <h1 id="Rating" class="component-heading">Rating</h1>
+ 
+                 <p class="intro-text">Ratings are useful for taking user's insights about their experience.</p>
+ 
+                 <h2>Star Rating</h2>
+                 <p class="description">The most common ways of getting rating from user is star ratings in webistes. Check out the HTML code for star rating. </p>
+ 
+                 <section class="example-container align-items-center">
+                    <div class="rating flex-row">
+
+                        <input class="rating-input" type="radio" id="5-stars" name="rating" value="5" />
+                        <label for="5-stars" class="rating-label form-label-inline"><i class="fas fa-star"></i></label>
+
+                        <input class="rating-input" type="radio" id="4-stars" name="rating" value="4" />
+                        <label for="4-stars" class="rating-label form-label-inline"><i class="fas fa-star"></i></label>
+
+                        <input class="rating-input"type="radio" id="3-stars" name="rating" value="3" />
+                        <label for="3-stars" class="rating-label form-label-inline"><i class="fas fa-star"></i></label>
+
+                        <input class="rating-input" type="radio" id="2-stars" name="rating" value="2" />
+                        <label for="2-stars" class="rating-label form-label-inline"><i class="fas fa-star"></i></label>
+
+                        <input class="rating-input" type="radio" id="1-star" name="rating" value="1" />
+                        <label for="1-star" class="rating-label form-label-inline"><i class="fas fa-star"></i></label>
+ 
+                    </div>
+
+                    <div class="rating-display"></div>
+                </section>
+
+                 <section class="code-container">
+                     <pre>
+                         <code class="html">
+                            &lt;div class=&quot;rating flex-row&quot;&gt;
+
+                                &lt;input class=&quot;rating-input&quot; type=&quot;radio&quot; id=&quot;5-stars&quot; name=&quot;rating&quot; value=&quot;5&quot; /&gt;
+                                &lt;label for=&quot;5-stars&quot; class=&quot;rating-label form-label-inline&quot;&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+
+                                &lt;input class=&quot;rating-input&quot; type=&quot;radio&quot; id=&quot;4-stars&quot; name=&quot;rating&quot; value=&quot;4&quot; /&gt;
+                                &lt;label for=&quot;4-stars&quot; class=&quot;rating-label form-label-inline&quot;&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+
+                                &lt;input class=&quot;rating-input&quot;type=&quot;radio&quot; id=&quot;3-stars&quot; name=&quot;rating&quot; value=&quot;3&quot; /&gt;
+                                &lt;label for=&quot;3-stars&quot; class=&quot;rating-label form-label-inline&quot;&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+
+                                &lt;input class=&quot;rating-input&quot; type=&quot;radio&quot; id=&quot;2-stars&quot; name=&quot;rating&quot; value=&quot;2&quot; /&gt;
+                                &lt;label for=&quot;2-stars&quot; class=&quot;rating-label form-label-inline&quot;&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+
+                                &lt;input class=&quot;rating-input&quot; type=&quot;radio&quot; id=&quot;1-star&quot; name=&quot;rating&quot; value=&quot;1&quot; /&gt;
+                                &lt;label for=&quot;1-star&quot; class=&quot;rating-label form-label-inline&quot;&gt;&lt;i class=&quot;fas fa-star&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;rating-display&quot;&gt;&lt;/div&gt;
+                         </code>
+                     </pre>
+                 </section>
+
+                 <h2>Javascript</h2>
+                <section class="code-container">
+                    <pre>
+                        <code language="javascript">
+                            const starsGiven = document.querySelectorAll('.rating-input')
+                            const ratingDisplay = document.querySelector('.rating-display')
+
+                            starsGiven.forEach(starInput=>{
+                                starInput.addEventListener('click',()=>{
+                                    ratingDisplay.innerHTML = `&lt;p class="md-1 text-bold-500"&gt;You gave ${starInput.value} &lt;star/p&gt;`
+                                })
+                            })
+                        </code>
+                    </pre>
+                </section>
+
+                <!--Snackbar-->
+
+                <hr>
+                <h1 id="Snackbar" class="component-heading">Snackbar</h1>
+
+                <p class="intro-text">Snackbars are used to provide short messages to user. They mostly appear on the bottom of the webpage. And do not iterfere in user's experience.</p>
+
+                <h2>Different variant of Snackbar</h2>
+                <p class="description">Shuttle UI comes with four different variant of Snackbars. Add <span class="text-highlight">snackbar-primary, snackbar-danger, snackbar-success and snackbar-info</span> classes for different variant of snackbars.</p> 
+
+                <section class="example-container align-items-center">
+                    <div class="snackbar flex-row snackbar-primary pd-1">
+                        <p class="md-ht-2">This is a primary snackbar</p>
+                        <span class="btn-snackbar-cancel md-ht-2"><i class="snackbar-dismiss fas fa-times"></i></span>
+                    </div>
+
+                    <div class="snackbar flex-row snackbar-danger pd-1">
+                        <p class="md-ht-2">This is a danger snackbar</p>
+                        <span class="btn-snackbar-cancel md-ht-2"><i class="snackbar-dismiss fas fa-times"></i></span>
+                    </div>
+
+                    <div class="snackbar flex-row snackbar-success pd-1">
+                        <p class="md-ht-2">This is a success snackbar</p>
+                        <span class="btn-snackbar-cancel md-ht-2"><i class="snackbar-dismiss fas fa-times"></i></span>
+                    </div>
+
+                    <div class="snackbar flex-row snackbar-info pd-1">
+                        <p class="md-ht-2">This is a info snackbar</p>
+                        <span class="btn-snackbar-cancel md-ht-2"><i class="snackbar-dismiss fas fa-times"></i></span>
+                    </div>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                        <code class="html">
+                            &lt;div class=&quot;snackbar flex-row snackbar-primary pd-1&quot;&gt;
+                                &lt;p class=&quot;md-ht-2&quot;&gt;This is a primary snackbar&lt;/p&gt;
+                                &lt;span class=&quot;btn-snackbar-cancel md-ht-2&quot;&gt;
+                                &lt;i class=&quot;snackbar-dismiss fas fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+        
+                            &lt;div class=&quot;snackbar flex-row snackbar-danger pd-1&quot;&gt;
+                                &lt;p class=&quot;md-ht-2&quot;&gt;This is a danger snackbar&lt;/p&gt;
+                                &lt;span class=&quot;btn-snackbar-cancel md-ht-2&quot;&gt;
+                                &lt;i class=&quot;snackbar-dismiss fas fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+        
+                            &lt;div class=&quot;snackbar flex-row snackbar-success pd-1&quot;&gt;
+                                &lt;p class=&quot;md-ht-2&quot;&gt;This is a success snackbar&lt;/p&gt;
+                                &lt;span class=&quot;btn-snackbar-cancel md-ht-2&quot;&gt;
+                                &lt;i class=&quot;snackbar-dismiss fas fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+        
+                            &lt;div class=&quot;snackbar flex-row snackbar-info pd-1&quot;&gt;
+                                &lt;p class=&quot;md-ht-2&quot;&gt;This is a info snackbar&lt;/p&gt;
+                                &lt;span class=&quot;btn-snackbar-cancel md-ht-2&quot;&gt;
+                                &lt;i class=&quot;snackbar-dismiss fas fa-times&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                            &lt;/div&gt;
+                        </code>
+                    </pre>
+                </section>
+
+                <section class="example-container align-items-center">
+                    <!--DEMO SNACKBAR-->
+                    <div class="snackbar snackbar-demo flex-row snackbar-primary pd-1">
+                        <p class="md-ht-2">This is a example snackbar</p>
+                        <span class="btn-snackbar-cancel md-ht-2"><i class="snackbar-dismiss fas fa-times"></i></span>
+                    </div>
+                    <button class="btn btn-primary btn-snackbar-demo">Show Snackbar</button>
+                </section>
+
+                <h2>Javascript</h2>
+
+                <section class="code-container">
+                    <pre>
+                        <code class="javascript">
+                            const btnSnackbarDemo = document.querySelector('.btn-snackbar-demo')
+                            const snackbar = document.querySelector('.snackbar-demo')
+                            const btnSnackbarCancel = document.querySelectorAll('.snackbar-dismiss')
+
+                            btnSnackbarDemo.addEventListener('click',()=>{
+                                snackbar.style.display = "flex"
+                            })
+
+                            btnSnackbarCancel.forEach(btn=>{
+                                btn.addEventListener('click',()=>snackbar.style.display="none")
+                            })
+                        </code>
+                    </pre>
+                </section>
 
     </main>
 

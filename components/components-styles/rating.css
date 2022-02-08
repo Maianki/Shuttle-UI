@@ -1,0 +1,21 @@
+.rating{
+    flex-direction: row-reverse;
+    width: 20rem;
+}
+
+.rating-input{
+    display: none; 
+}
+
+.rating-label{
+    color:var(--GRAY-COLOR);
+    cursor: pointer;
+}
+
+.rating-input:checked ~ .rating-label{
+    color:var(--ORANGE-COLOR);
+}
+
+.rating-input:hover ~ .rating-label{
+    color:var(--SUCCESS-BTN-COLOR);
+  }

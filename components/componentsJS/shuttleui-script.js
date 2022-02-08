@@ -92,3 +92,28 @@ btnModalCancel.forEach(btn=>{
         modal.style.display = "none"
     })
 })
+
+/*Rating*/
+
+const starsGiven = document.querySelectorAll('.rating-input')
+const ratingDisplay = document.querySelector('.rating-display')
+
+starsGiven.forEach(starInput=>{
+    starInput.addEventListener('click',()=>{
+        ratingDisplay.innerHTML = `<p class="md-1 text-bold-500">You gave ${starInput.value} star</p>`
+    })
+})
+
+/*Snackbar*/
+
+const btnSnackbarDemo = document.querySelector('.btn-snackbar-demo')
+const snackbar = document.querySelector('.snackbar-demo')
+const btnSnackbarCancel = document.querySelectorAll('.snackbar-dismiss')
+
+btnSnackbarDemo.addEventListener('click',()=>{
+    snackbar.style.display = "flex"
+})
+
+btnSnackbarCancel.forEach(btn=>{
+    btn.addEventListener('click',()=>snackbar.style.display="none")
+})
