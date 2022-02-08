@@ -14,6 +14,7 @@
 @import url('modal.css');
 @import url('rating.css');
 @import url('snackbar.css');
+@import url('grid.css');
 
 html{
     font-family: 'Roboto', sans-serif;

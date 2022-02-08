@@ -56,6 +56,7 @@
             <li class="sidenav-item"><a class="sidenav-link" href="#Modal">Modal</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Rating">Rating</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Snackbar">Snackbar</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Grid">Grid</a></li>
             </li>
         </ul>
     </aside>
@@ -84,25 +85,25 @@
             how to import Shuttle UI into your webpage.</p>
         <section class="code-container">
             <pre>
-                    <code class="html">
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html&gt;
-                            &lt;head&gt;
-                            &lt;!--Import shuttleUI-main.css--&gt;
-                            &lt;link rel=&quot;stylesheet&quot; href=&quot;https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css&quot;&gt;
+                <code class="html">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;!--Import shuttleUI-main.css--&gt;
+                        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://shuttleui.netlify.app/components/components-styles/shuttleUI-main.css&quot;&gt;
 
-                            &lt;!--Let browser know website is optimized for mobile--&gt;
-                            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
-                            &lt;/head&gt;
+                        &lt;!--Let browser know website is optimized for mobile--&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;/&gt;
+                        &lt;/head&gt;
 
-                            &lt;body&gt;
-                                &lt;!--Shuttle ui uses font-awesome 5 for icons so make sure to install it as well 
-                                if you are using components that involves icons--&gt;
-                                &lt;script src=&quot;https://kit.fontawesome.com/2352d5969b.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;
-                    </code>
-                </pre>
+                        &lt;body&gt;
+                            &lt;!--Shuttle ui uses font-awesome 5 for icons so make sure to install it as well 
+                            if you are using components that involves icons--&gt;
+                            &lt;script src=&quot;https://kit.fontawesome.com/2352d5969b.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
         </section>
         </section>
 
@@ -2065,6 +2066,155 @@
                         </code>
                     </pre>
                 </section>
+
+        <hr>
+
+        <h1 id="Grid" class="component-heading">Simplified Grid</h1>
+
+        <p class="intro-text">Grids makes layout simpler and look more elegant. Shuttle UI right now has only two items and three items grid which takes equal amount of space of the container.</p>
+
+        <h2>Two items in a grid</h2>
+        <p class="description">To use Shuttle UI two items grid add <span class="text-highlight">grid</span> along with <span
+                class="text-highlight">grid-2-col-1-row</span> or <span class="text-highlight">grid-1-col-1-row</span> classes. Checkout the HTML code below.
+        </p>
+
+        <section class="example-container align-items-center">
+
+            <div class="grid grid-2-col-1-row">
+                <div class="card">
+                    <img class="responsive-img" src="./components/assets/smash badminton.jpg" alt="badminton smash">
+                </div>
+               <div class="card"> 
+                   <img class = "responsive-img"
+                   src="./components/assets/shuttle-img.jpg" alt="drop in badminton">
+               </div>
+
+            </div>
+
+        </section>
+
+        <section class="code-container">
+            <pre>
+                <code class="html">
+                &lt;div class=&quot;grid grid-2-col-1-row&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt;
+                        &lt;img class=&quot;responsive-img&quot; src=&quot;./components/assets/smash badminton.jpg&quot; alt=&quot;badminton smash&quot;&gt;
+                    &lt;/div&gt;
+                     &lt;div class=&quot;card&quot;&gt; 
+                    &lt;img class = &quot;responsive-img&quot;
+                    src=&quot;./components/assets/shuttle-img.jpg&quot; alt=&quot;drop in badminton&quot;&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section class="example-container align-items-center">
+            <div class="grid grid-1-col-row">
+                <div class="card">
+                    <img class="responsive-img" src="./components/assets/smash badminton.jpg" alt="badminton smash">
+                </div>
+                <div class="card"> 
+                    <img class = "responsive-img"
+                    src="./components/assets/shuttle-img.jpg" alt="drop in badminton">
+                </div>
+            </div>
+        </section>
+
+        <section class="code-container">
+            <pre>
+                <code class="html">
+                    &lt;div class=&quot;grid grid-1-col-row&quot;&gt;
+                        &lt;div class=&quot;card&quot;&gt;
+                            &lt;img class=&quot;responsive-img&quot; src=&quot;./components/assets/smash badminton.jpg&quot; alt=&quot;badminton smash&quot;&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;card&quot;&gt; 
+                            &lt;img class = &quot;responsive-img&quot;
+                            src=&quot;./components/assets/shuttle-img.jpg&quot; alt=&quot;drop in badminton&quot;&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+        <h2>Three Items in a grid</h2>
+        <p class="description"> To use Shuttle UI grid for three items add classes <span class="text-highlight">grid-3-col-1-row</span> or <span class="text-highlight">grid-1-col-3-row</span>. Check the HTML code below of three items in grid.</p>
+
+        <section class="example-container align-items-center">
+            <div class="grid grid-3-col-1-row">
+                <div class="card"> 
+                    <img class = "responsive-img"
+                    src="./components/assets/racquets and shuttles.jpg" alt="racquets and shuttles">
+                </div>
+                <div class="card"> 
+                    <img class = "responsive-img"
+                    src="./components/assets/racquets and shuttles.jpg" alt="racquets and shuttles">
+                </div>
+                <div class="card"> 
+                    <img class = "responsive-img"
+                    src="./components/assets/racquets and shuttles.jpg" alt="racquets and shuttles">
+                </div>
+            </div>
+        </section>
+
+        <section class="code-container">
+            <pre>
+                <code class="html">
+                &lt;div class=&quot;grid grid-3-col-1-row&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt; 
+                        &lt;img class = &quot;responsive-img&quot;
+                        src=&quot;./components/assets/racquets and shuttles.jpg&quot; alt=&quot;racquets and shuttles&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card&quot;&gt; 
+                        &lt;img class = &quot;responsive-img&quot;
+                        src=&quot;./components/assets/racquets and shuttles.jpg&quot; alt=&quot;racquets and shuttles&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card&quot;&gt; 
+                        &lt;img class = &quot;responsive-img&quot;
+                        src=&quot;./components/assets/racquets and shuttles.jpg&quot; alt=&quot;racquets and shuttles&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section class="example-container align-items-center">
+            <div class="grid grid-1-col-3-row">
+                <div class="card"> 
+                    <img class = "responsive-img"
+                    src="./components/assets/racquets and shuttles.jpg" alt="racquets and shuttles">
+                </div>
+                <div class="card"> 
+                    <img class = "responsive-img"
+                    src="./components/assets/racquets and shuttles.jpg" alt="racquets and shuttles">
+                </div>
+                <div class="card"> 
+                    <img class = "responsive-img"
+                    src="./components/assets/racquets and shuttles.jpg" alt="racquets and shuttles">
+                </div>
+            </div>
+        </section>
+
+        <section class="code-container">
+            <pre>
+                <code class="html">
+                &lt;div class=&quot;grid grid-1-col-3-row&quot;&gt;
+                    &lt;div class=&quot;card&quot;&gt; 
+                        &lt;img class = &quot;responsive-img&quot;
+                        src=&quot;./components/assets/racquets and shuttles.jpg&quot; alt=&quot;racquets and shuttles&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card&quot;&gt; 
+                        &lt;img class = &quot;responsive-img&quot;
+                        src=&quot;./components/assets/racquets and shuttles.jpg&quot; alt=&quot;racquets and shuttles&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;card&quot;&gt; 
+                        &lt;img class = &quot;responsive-img&quot;
+                        src=&quot;./components/assets/racquets and shuttles.jpg&quot; alt=&quot;racquets and shuttles&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
 
     </main>
 
