@@ -1,0 +1,45 @@
+.snackbar{
+    min-width: 35rem;
+    max-width: 50rem;
+    color: var(--WHITE-COLOR);
+    border-radius: 5px;
+    align-items: center;
+    margin: 1rem;
+}
+
+.btn-snackbar-cancel{
+    display: inline-block;
+    color: var(--WHITE-COLOR);
+    font-size: 1.6rem;
+    margin-left:auto;
+}
+
+.btn-snackbar-cancel:hover{
+    transform: scale(1.2);
+}
+
+.snackbar-primary{
+    background-color: var(--PRIMARY-COLOR);
+}
+
+.snackbar-success{
+    background-color: var(--SUCCESS-BTN-COLOR);
+}
+
+.snackbar-danger{
+    background-color: var(--DANGER-ALERT-COLOR);
+}
+
+.snackbar-info{
+    background-color: var(--INFO-ALERT-COLOR);
+}
+
+/*Class for demo snackbar*/
+
+.snackbar-demo{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    z-index: 2;
+}

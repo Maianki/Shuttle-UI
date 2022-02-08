@@ -12,6 +12,8 @@
 @import url('lists.css');
 @import url('navbar.css');
 @import url('modal.css');
+@import url('rating.css');
+@import url('snackbar.css');
 
 html{
     font-family: 'Roboto', sans-serif;
