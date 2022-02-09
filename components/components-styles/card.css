@@ -1,15 +1,3 @@
-:root{
-    --WHITE-COLOR:#FFF;
-    --MYRTEL-GREEN-COLOR: #307473;
-    --GRAY-COLOR:	#A9A9A9;
-    --ORANGE-COLOR: #FFA500;
-    --DEFAULT-CARD-SHADOW-1: rgba(0,0,0,0.16);
-    --DEFAULT-CARD-SHADOW-2: rgba(0,0,0,0.23);
-    --CARD-HOVER-SHADOW-1:rgba(0,0,0,0.12);
-    --CARD-HOVER-SHADOW-2:rgba(0,0,0,0.24);
-    --ALTRNATE-CARD-SHADOW-1:rgba(0,0,0,0.30);
-    --ALTRNATE-CARD-SHADOW-2:rgba(0,0,0,0.22);
-}
 
 /*Common classes for cards*/
 .card{
