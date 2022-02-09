@@ -1,8 +1,3 @@
-/*Large avatar --> 50px , medium avatar--> 36px, small avatar --> 28px and extra small avatar --->20px */
-:root{
-    --WHITE-COLOR:#FFF;
-    --IMG-BGCOLOR:#eeeeee;
-}
 
 .avatar{
     width:10rem;

@@ -1,10 +1,3 @@
-:root{
-    --PRIMARY-BTN-COLOR : #4B4453;
-    --SECONDARY-BTN-COLOR: #9a94a1;
-    --BLACK-TEXT-COLOR: #000;
-    --SUCCESS-BTN-COLOR:#FFD700;
-    --INFO-BTN-COLOR:#87ceeb;
-}
 
 .btn{
     margin: 1rem;
