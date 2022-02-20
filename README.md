@@ -1,5 +1,5 @@
 
-<img src="./docs-site/assets/logo.png" width="150" height="150">
+<img src="./docs-site/assets/logo.png" width="150" height="150" alt="shuttle UI logo">
 
 # Shuttle UI
 
