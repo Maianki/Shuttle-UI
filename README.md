@@ -41,7 +41,7 @@ Some components like modals, rating and snackbar will require Javascipt to work.
 
 
 ## Documentation
-To learn about the components in details you can visit our [Documentation site.](https://shuttleui.netlify.app/docs.html)
+To learn about the components in details you can visit our [documentation site.](https://shuttleui.netlify.app/docs.html)
 
 ## Demo
 
@@ -52,10 +52,9 @@ To learn about the components in details you can visit our [Documentation site.]
 
 This project is used in the following websites:
 
-- [Ecommerce - shuttle shopy](https://badminton-quizzeria.netlify.app/)
+- [Ecommerce - shuttle shopy](https://shuttle-shopy.netlify.app/)
 
-- [Quiz App - Badminton Quizzeria ](https://shuttle-shopy.netlify.app/)
-
+- [Quiz App - Badminton Quizzeria ](https://badminton-quizzeria.netlify.app/)
 
 
 ## Creator
