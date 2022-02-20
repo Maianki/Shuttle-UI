@@ -1,14 +1,36 @@
+
 :root{
     --BORDER-COLOR:#eeeeee;
-    --TEXT-HIGHLIGHT-COLOR:#808F87;
     --PRIMARY-COLOR: #4B4453;
     --SECONDARY-COLOR: #9a94a1;
     --BLACK-COLOR:#000;
     --WHITE-COLOR:#FFF;
     --GREY-COLOR:#eee;
     --GREY-COLOR-2:#F9F7F7; 
-    --INDIAN-YELLOW:#dda448;
+    --TEXT-COLOR:#000;
+    --HEADING-INVERTED-COLOR:#4B4453;
+    --SIDENAV-LINK-COLOR:#4B4453;
+    --SUBHEADING-COLOR:#000;
 }
+
+.dark-mode{
+    --BORDER-COLOR:#eeeeee;
+    --PRIMARY-COLOR: #4B4453;
+    --SECONDARY-COLOR: #f3f3fa;
+    --BLACK-COLOR:#000;
+    --WHITE-COLOR:#FFF;
+    --GREY-COLOR:#81879e;
+    --GREY-COLOR-2:#F9F7F7; 
+    --TEXT-COLOR:#FFF;
+    --HEADING-INVERTED-COLOR:#8c94a3;
+    --SUBHEADING-COLOR:#FFF;
+    --BG-COLOR:#262636;
+    --SIDENAV-LINK-COLOR:#f3f3fa;
+}
+
+ .component-subheading{
+     color: var(--SUBHEADING-COLOR);
+ }
 
 .example-container{
     display: flex;
@@ -41,15 +63,18 @@
 
 .description{
     margin: 1rem 1rem 1.5rem 1rem;
+    color: var(--TEXT-COLOR);
 }
 
 .component-heading{
     font-size: 3.6rem;
+    color: var(--TEXT-COLOR);
 }
 
 .intro-text{
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin: 1rem 1rem 2.5rem 1rem;
+    color: var(--TEXT-COLOR);
 }
 
 .code-container{
@@ -70,9 +95,24 @@ hr {
     border: 0;
     height: 1px;
     margin: 4rem;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, var(--WHITE-COLOR), rgba(0, 0, 0, 0.75), var(--WHITE-COLOR));
 }
 
 .sidenav-hr{
     margin: 1rem 0;
 }
+
+.text-highlight{
+    color: var(--TEXT-HIGHLIGHT-COLOR);
+    font-style: italic;
+}
+
+/*CUSTOM SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 1.2rem;
+  }
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--SECONDARY-COLOR);
+    outline: 1px solid var(--GRAY-COLOR-2);
+  }

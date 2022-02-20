@@ -14,7 +14,7 @@
 }
 
 .sidenav-heading{
-  color: var(--BLACK-COLOR);
+  color: var(--TEXT-COLOR);
   font-size: 2.2rem;
   font-weight: 700;
   pointer-events: none;
@@ -28,7 +28,7 @@
 }
 
 .sidenav-link{
-  color: var(--PRIMARY-COLOR);
+  color: var(--SIDENAV-LINK-COLOR);
   width: 100%;
   transition: all .3s ease;
   padding-left: 2rem;

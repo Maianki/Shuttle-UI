@@ -14,11 +14,11 @@
 }
 
 .heading-inverted{
-    color: var(--PRIMARY-COLOR);
+    color: var(--HEADING-INVERTED-COLOR);
 }
 
 .hero-text{
-    color:var(--PRIMARY-COLOR);
+    color:var(--SIDENAV-LINK-COLOR);
     font-size: 2.2rem;
     line-height: 2.8rem;
     margin-bottom: 3.5rem;
