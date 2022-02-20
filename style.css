@@ -1,17 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('./components/components-styles/shuttleUI-main.css');
-@import url('./docs-site/docs-display-component.css');
-@import url('./docs-site/docs-navbar.css');
-@import url('./docs-site/docs-landing-page.css');
-@import url('./docs-site/docs-site-aside.css');
-@import url('./docs-site/docs-layout.css');
+@import url('./docs-site/docs-styles/docs-display-component.css');
+@import url('./docs-site/docs-styles/docs-navbar.css');
+@import url('./docs-site/docs-styles/docs-landing-page.css');
+@import url('./docs-site/docs-styles/docs-site-aside.css');
+@import url('./docs-site/docs-styles/docs-layout.css');
 
 html{
     scroll-behavior: smooth;
 }
+
 body{
     display: flex;
     flex-direction: column;
     min-height:100vh; 
+    background-color: var(--BG-COLOR);
 }

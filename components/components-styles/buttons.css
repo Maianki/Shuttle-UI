@@ -77,6 +77,3 @@
     transition: transform .4s;
  }
 
- .btn-fab:hover{
-     transform: rotate(45deg);
- }

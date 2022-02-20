@@ -117,3 +117,7 @@ btnSnackbarDemo.addEventListener('click',()=>{
 btnSnackbarCancel.forEach(btn=>{
     btn.addEventListener('click',()=>snackbar.style.display="none")
 })
+
+/*Floating Action Button*/
+
+const floatingActionBtn =  document.querySelector('.btn-fab')
