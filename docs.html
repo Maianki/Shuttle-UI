@@ -1731,7 +1731,7 @@
                 </p>
 
                 <h2 class="component-subheading">Simple Navbar</h2>
-                <p class="description">Shuttle UI navbar is responsive. It has a section for brand logo. The <span class="text-highlight">navbar-form</span> section includes a search bar which shrinks on smaller viewport size. The <span class="text-highlight">navbar-menu</span> section includes icon with nav menu links for navigation. Check the below HTML for navbar.</p>
+                <p class="description">Shuttle UI simple navbar is responsive by default without an hamburger. It has a section for brand logo. The <span class="text-highlight">navbar-form</span> section includes a search bar which shrinks on smaller viewport size. The <span class="text-highlight">navbar-menu</span> section includes icon with nav menu links for navigation. Check the below HTML for navbar.</p>
 
                 <section class="example-container-align-horizontal">
                     <nav class="navbar flex-row">
@@ -1806,6 +1806,99 @@
                         </code>
                     </pre>
 
+                </section>
+
+                <h2 class="component-subheading">Responsive Navbar</h2>
+                <p class="description">Although Shuttle UI navbar is responsive by default but to have a feature of hamburger on smaller viewport you need to add responsive navbar which is designed specifically for that purpose. The <span class="text-highlight">navbar-form</span> section includes a search bar which shrinks on smaller viewport size. The <span class="text-highlight">navbar-menu</span> section includes icon with menu links for navigation. This menu section gets hidden in smaller viewport and a hamburger in menu gets displayed in place of menu icons. See the HTML code below for responsive navbar. </p>
+
+                <section class="example-container-align-horizontal">
+                    <nav class="navbar flex-row">
+                        <a class="navbar-brand" href="#">
+                            <img class="responsive-img navbar-logo" src="./components/assets/component-nav-logo.png" alt="">
+                        </a>
+                        <form class="navbar-form form-label-inline">
+                            <input class="form-search navbar-form" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+
+                        <ul class="navbar-menu menu-hamburger list-unstyled flex-row">
+                            <li class="list-inline">
+                                <a class="flex-column menu-link menu-hamburger" href="#">
+                                    <i class=" fas fa-bars fa-2x"></i>
+                                </a>
+                                
+                            </li>
+                        </ul>
+                        <ul class="navbar-menu navbar-responsive-menu list-unstyled flex-row">
+                            
+                            <li class="list-inline">
+                                <a class="flex-column menu-link" href="#">
+                                    login
+                                    <i class="fas fa-sign-in-alt"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline">
+                                <a class="flex-column menu-link" href="#">
+                                    wishlist 
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                            </li>
+                                
+                            <li class="list-inline">
+                                <a class="flex-column menu-link" href="#">
+                                    cart
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                               
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="code-container">
+                    <pre>
+                        <code class="html">
+                            &lt;nav class=&quot;navbar flex-row&quot;&gt;
+                            &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+                                &lt;img class=&quot;responsive-img navbar-logo&quot; src=&quot;./components/assets/component-nav-logo.png&quot; alt=&quot;&quot;&gt;
+                            &lt;/a&gt;
+                            &lt;form class=&quot;navbar-form form-label-inline&quot;&gt;
+                                &lt;input class=&quot;form-search navbar-form&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot;&gt;
+                            &lt;/form&gt;
+
+                            &lt;ul class=&quot;navbar-menu menu-hamburger list-unstyled flex-row&quot;&gt;
+                                &lt;li class=&quot;list-inline&quot;&gt;
+                                    &lt;a class=&quot;flex-column menu-link menu-hamburger&quot; href=&quot;#&quot;&gt;
+                                        &lt;i class=&quot; fas fa-bars fa-2x&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                    
+                                &lt;/li&gt;
+                            &lt;/ul&gt;
+                            &lt;ul class=&quot;navbar-menu navbar-responsive-menu list-unstyled flex-row&quot;&gt;
+                                
+                                &lt;li class=&quot;list-inline&quot;&gt;
+                                    &lt;a class=&quot;flex-column menu-link&quot; href=&quot;#&quot;&gt;
+                                        login
+                                        &lt;i class=&quot;fas fa-sign-in-alt&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;list-inline&quot;&gt;
+                                    &lt;a class=&quot;flex-column menu-link&quot; href=&quot;#&quot;&gt;
+                                        wishlist 
+                                        &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
+                                    
+                                &lt;li class=&quot;list-inline&quot;&gt;
+                                    &lt;a class=&quot;flex-column menu-link&quot; href=&quot;#&quot;&gt;
+                                        cart
+                                        &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/li&gt;
+                                
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                        </code>
+                    </pre>
                 </section>
 
                 <!--Modal-->
