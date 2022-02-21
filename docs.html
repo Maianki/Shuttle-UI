@@ -57,6 +57,7 @@
             <li class="sidenav-item"><a class="sidenav-link" href="#Rating">Rating</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Snackbar">Snackbar</a></li>
             <li class="sidenav-item"><a class="sidenav-link" href="#Grid">Grid</a></li>
+            <li class="sidenav-item"><a class="sidenav-link" href="#Slider">Slider</a></li>
             </li>
         </ul>
     </aside>
@@ -2211,6 +2212,96 @@
                         src=&quot;./components/assets/racquets and shuttles.jpg&quot; alt=&quot;racquets and shuttles&quot;&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
+                </code>
+            </pre>
+        </section>
+
+        <hr>
+
+        <h1 id="Slider" class="component-heading">Slider</h1>
+
+        <p class="intro-text">Sliders allows user to decide values in range. These are used to give rating and select price range or volume.</p>
+
+        <h2 class="component-subheading">Normal Slider</h2>
+        <p class="description">This is a normal slider which works between a range of 0 to 100.  The slider changes with a step of 1, You need to add <span class="text-highlight">slider</span> and <span class="text-highlight">slider-range</span> classes to use it.
+        </p>
+
+        <section class="example-container align-items-center">
+
+            <label class="form-label" for="slider">
+            <input id="slider" type="range" min="1" max="100" value="50" />
+            
+            <div class="slider-range"> 
+                <span class="text-sm">1</span>
+                <span class="text-sm">50</span>
+                <span class="text-sm">100</span>
+            </div>
+
+        </section>
+
+        <section class="code-container">
+            <pre>
+                <code class="html">
+                    &#x3C;label class=&#x22;form-label&#x22; for=&#x22;slider&#x22;&#x3E;
+                    &#x3C;input id=&#x22;slider&#x22; type=&#x22;range&#x22; min=&#x22;1&#x22; max=&#x22;100&#x22; value=&#x22;50&#x22; /&#x3E;
+                    
+                    &#x3C;div class=&#x22;slider-range&#x22;&#x3E; 
+                        &#x3C;span class=&#x22;text-sm&#x22;&#x3E;1&#x3C;/span&#x3E;
+                        &#x3C;span class=&#x22;text-sm&#x22;&#x3E;50&#x3C;/span&#x3E;
+                        &#x3C;span class=&#x22;text-sm&#x22;&#x3E;100&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                </code>
+            </pre>
+        </section>
+
+        <h2 class="component-subheading">Customized Slider for rating</h2>
+        <p class="description">This is a customized slider of Shuttle UI to give rating from 0 to 5. The slider changes with a step of .1, You need to add <span class="text-highlight">slider-rating</span> and <span class="text-highlight">slider-rating-range</span> classes to use customiszed disabled slider of shuttle UI.
+        </p>
+
+        <section class="example-container align-items-center">
+
+            <label class="form-label" for="slider"></label>
+            <input class="slider-rating" type="range" min="1" max="5" value="3" step=".1" id="slider">
+            <div class="slider-rating-range">
+                <span class="text-sm"><i class="far fa-star"></i> 1</span>
+                <span class="text-sm"><i class="far fa-star"></i> 5</span>
+            </div>
+
+        </section>
+
+        <section class="code-container">
+            <pre>
+                <code class="html">
+                    &#x3C;label class=&#x22;form-label&#x22; for=&#x22;slider&#x22;&#x3E;&#x3C;/label&#x3E;
+                    &#x3C;input class=&#x22;slider-rating&#x22; type=&#x22;range&#x22; min=&#x22;1&#x22; max=&#x22;5&#x22; value=&#x22;3&#x22; step=&#x22;.1&#x22; id=&#x22;slider&#x22;&#x3E;
+                    &#x3C;div class=&#x22;slider-rating-range&#x22;&#x3E;
+                        &#x3C;span class=&#x22;text-sm&#x22;&#x3E;&#x3C;i class=&#x22;far fa-star&#x22;&#x3E;&#x3C;/i&#x3E; 1&#x3C;/span&#x3E;
+                        &#x3C;span class=&#x22;text-sm&#x22;&#x3E;&#x3C;i class=&#x22;far fa-star&#x22;&#x3E;&#x3C;/i&#x3E; 5&#x3C;/span&#x3E;
+                    &#x3C;/div&#x3E;
+                </code>
+            </pre>
+        </section>
+
+        <h2 class="component-subheading">Customiszed disabled Slider</h2>
+        <p class="description">Check the below HTML for diabled slider. You need to add <span class="text-highlight">slider-disable-group</span> and <span class="text-highlight">slider-disabled</span> to use customiszed disabled slider of shuttle UI.
+        </p>
+
+        <section class="example-container align-items-center">
+            
+            <div class="slider-disable-group">
+                <label class="form-label-inline text-gray" for="slider"><i class="fas fa-volume-mute fa-2x"></i></label> 
+                <input class="slider-disabled" type="range" min="1" max="5" value="3" step="1" disabled id="slider">
+            </div>         
+
+        </section>
+
+        <section class="code-container">
+            <pre>
+                <code class="html">         
+                    &#x3C;div class=&#x22;slider-disable-group&#x22;&#x3E;
+                    &#x3C;label class=&#x22;form-label-inline text-gray&#x22; for=&#x22;slider&#x22;&#x3E;&#x3C;i class=&#x22;fas fa-volume-mute fa-2x&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/label&#x3E; 
+                    &#x3C;input class=&#x22;slider-disabled&#x22; type=&#x22;range&#x22; min=&#x22;1&#x22; max=&#x22;5&#x22; value=&#x22;3&#x22; step=&#x22;1&#x22; disabled id=&#x22;slider&#x22;&#x3E;
+                    &#x3C;/div&#x3E;      
                 </code>
             </pre>
         </section>
