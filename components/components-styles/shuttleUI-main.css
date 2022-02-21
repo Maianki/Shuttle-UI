@@ -15,6 +15,7 @@
 @import url('rating.css');
 @import url('snackbar.css');
 @import url('grid.css');
+@import url('slider.css');
 
 html{
     font-family: 'Roboto', sans-serif;
