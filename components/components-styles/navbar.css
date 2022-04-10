@@ -35,10 +35,6 @@
     color: var(--WHITE-COLOR);
 }
 
-li .menu-link:hover{
-    color:var(--BLACK-COLOR);
-}
-
 /*CSS for responsive Navbar*/
 .menu-hamburger{
     display: none;
