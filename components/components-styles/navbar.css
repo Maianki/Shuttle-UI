@@ -1,6 +1,6 @@
 .navbar{
     width: 100%;
-    height: 8rem;
+    min-height: 8rem;
     padding: 0 1.5rem;
     background-color: var(--PRIMARY-COLOR);
     align-items: center;
