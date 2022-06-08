@@ -69,6 +69,7 @@
 .component-heading{
     font-size: 3.6rem;
     color: var(--TEXT-COLOR);
+    padding-top: 8rem;
 }
 
 .intro-text{
@@ -94,7 +95,7 @@ code{
 hr {
     border: 0;
     height: 1px;
-    margin: 4rem;
+    margin-top: 2.8rem;
     background-image: linear-gradient(to right, var(--WHITE-COLOR), rgba(0, 0, 0, 0.75), var(--WHITE-COLOR));
 }
 
