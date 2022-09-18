@@ -1,42 +1,93 @@
-<h1 align="center"><strong> Contribution Guideline</strong> </h1>
+# Contribution Guideline
 
 <br>
-<h2><strong>How do I make a contribution?</strong></h2>
 
-<p>Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!<p>
-<br>
-<h2> <strong> Here's a quick rundown on how to make a contribution to our project: </strong> </h2>
-<br>
-<ol>
-    <li> Find an <strong>issue</strong> that you are interested in addressing or a <strong>feature</strong> that you would like to add.</li>
-    <br>
-    <li>Fork the repository associated with the issue to your local GitHub organization. This means that you will have a copy of the repository under <strong>your-GitHub-username/repository-name. </strong> </li>
-    <br>
-    <li>Clone the repository to your local machine using: <strong> git clone https://github.com/github-username/repository-name.git. </strong></li>
-    <br>
-    <li>Add the upstream remote:<strong> git remote add upstream https://github.com/Maianki/Shuttle-UI.git </strong> </li>
-    <br>
-    <li>Pull the latest changes from the main repository if you think your fork is behind: <strong> git pull upstream main </strong> </li>
-    <br>
-    <li>Create a new branch and switch to it for your issue fix or feature using: <strong> git switch -c branch-name-here </strong> </li>
-    <br>
-    <li>Make the appropriate changes for the issue you are trying to address or the feature that you want to add.</li>
-    <br>
-    <li>Add the changes to the staging are and commit them to the branch you are working on.</li>
-    <br>
-    <li>Push the changes to the remote repository using: <strong>git push origin branch-name-here.</strong></li>
-    <br>
-    <li>Submit a pull request to the upstream repository.</li>
-    <br>
-    <li>Title the pull request with a short description of the changes made.</li>
-    <br>
-    <li>Wait for the pull request to be reviewed by a maintainer.</li>
-    <br>
-    <li>Make changes to the pull request if the reviewing maintainer recommends them.</li>
-    <br>
-    <li>Celebrate your success after your pull request is merged! 🎉</li>
+## How do I make a contribution?
 
-</ol>
-<hr>
-<h3> Thanks for taking the time to contribute! ❤️<h3>
-<h3> Don't forget to leave a star 🌟</h3>
+---
+
+<br>
+
+Never made an open source contribution before? Wondering how contributions work in the in our project? Here's a quick rundown!
+
+<br>
+
+## **Here's a quick rundown on how to make a contribution to our project:**
+
+---
+
+<br>
+
+1. Find anissue that you are interested in addressing or afeature that you would like to add.
+
+   <br>
+
+2. Fork the repository associated with the issue to your local GitHub organization. This means that you will have a copy of the repository `underyour-GitHub-username/repository-name.`
+
+   <br>
+
+3. Clone the repository to your local machine using:
+
+   ```
+   git clone https://github.com/github-username/repository-name.git.
+   ```
+
+4. Add the upstream remote:
+
+   ```
+    git remote add upstream https://github.com/Maianki/Shuttle-UI.git
+   ```
+
+5. Pull the latest changes from the main repository if you think your fork is behind:
+
+   ```
+   git pull upstream main
+   ```
+
+6. Create a new branch and switch to it for your issue fix or feature using:
+
+   ```
+   git switch -c branch-name-here
+   ```
+
+7. Make the appropriate changes for the issue you are trying to address or the feature that you want to add
+
+   <br>
+
+8. Add the changes to the staging are and commit them to the branch you are working on
+
+   <br>
+
+9. Push the changes to the remote repository using:
+
+   ```
+   git push origin branch-name-here
+   ```
+
+10. Submit a **pull request** to the upstream repository
+
+   <br>
+   
+11. Title the **pull request** with a short description of the changes made
+
+   <br>
+
+12. Wait for the pull request to be reviewed by a maintainer
+
+   <br>
+
+13. Make changes to the pull request if the reviewing maintainer recommends them
+
+   <br>
+
+14. Celebrate your success after your pull request is merged!
+
+## <br>
+
+---
+
+### Thanks for taking the time to contribute! ❤️
+
+<br>
+
+### Don't forget to leave a star 🌟
