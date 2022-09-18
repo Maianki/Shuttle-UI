@@ -18,7 +18,7 @@ Never made an open source contribution before? Wondering how contributions work 
 
 <br>
 
-1. Find anissue that you are interested in addressing or afeature that you would like to add.
+1. Find an issue that you are interested in addressing or a feature that you would like to add.
 
    <br>
 
@@ -67,7 +67,7 @@ Never made an open source contribution before? Wondering how contributions work 
 10. Submit a **pull request** to the upstream repository
 
    <br>
-   
+
 11. Title the **pull request** with a short description of the changes made
 
    <br>
