@@ -17,7 +17,7 @@
 
     <nav class="nav-container flex-row ">
         <a class="navbar-brand flex-row" href="index.html">
-            <div class="btn-hamburger"><i class="fas fa-bars"></i></div>
+            <!-- <div class="btn-hamburger"><i class="fas fa-bars"></i></div> -->
             <img class="site-logo" src="./docs-site/assets/logo.png" alt="logo">
         </a>
 
@@ -32,11 +32,17 @@
             <li>
                 <a class="nav-link md-ht-1" id="dark-mode-toggle" role="button" aria-label="toggle dark mode"><i class="fas fa-moon"></i></a>
             </li>
+            <button class="btn-hamburger btn btn-primary" data-js="toggle-sidebar"><i class="fas fa-bars"></i></button>
+              <!-- <div class="btn-hamburger md-ht-1" data-js="toggle-sidebar">
+                <i class="fas fa-bars"></i>
+              </div> -->
+
         </ul>
     </nav>
 
     <aside class="sidenav">
         <ul class="sidenav-nav">
+          <button class="btn btn-primary close-sidebar-btn" data-js="close-sidebar"><i class="fas fa-times"></i></button>
             <li class="sidenav-heading sidenav-item">Get Started</li>
             <li class="sidenav-item"><a class="sidenav-link" href="#">Installation</a></li>
             <hr class="sidenav-hr">
@@ -61,7 +67,7 @@
             </li>
         </ul>
     </aside>
-
+    <div id="nav-backdrop"></div>
     <main class="main-container">
 
         <section id="#">

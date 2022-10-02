@@ -1,26 +1,20 @@
-.main-container{
-    display: flex;
-    flex-direction: column;
-    margin: 3.5rem 2rem 3.5rem 38rem;
-    width:70%;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3.5rem 2rem 3.5rem 38rem;
+  width: 70%;
 }
 
-@media screen and (max-width:1024px){
-    .sidenav{
-        display: none;
-    }
+@media screen and (max-width: 1024px) {
+  .main-container {
+    margin: 3.5rem auto;
+    padding-right: 2rem;
+    width: 100%;
+    overflow: auto;
+  }
 
-    .main-container{
-        margin:3.5rem auto;
-        padding-right: 2rem;
-        width:100%;
-        overflow: auto;
-      }
-
-    .site-logo{
-        height:5rem;
-        width: 20rem;
-    }
-
+  .site-logo {
+    height: 5rem;
+    width: 20rem;
+  }
 }
-

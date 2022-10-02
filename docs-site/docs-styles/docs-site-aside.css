@@ -1,41 +1,81 @@
-.sidenav-nav{
-    width:35rem;
-    position: fixed;
-    top:0;
-    left: 0;
-    padding:10.5rem 1rem 5rem 1rem;
-    margin-left:0;
-    line-height: 3.5rem;
-    color: var(--PRIMARY-COLOR);
-    max-height:100vh;
-    height: 100%;
-    box-shadow: 0 3px 6px var(--DEFAULT-CARD-SHADOW-1), 0 3px 6px var(--DEFAULT-CARD-SHADOW-2);
-    overflow-y: auto;
+.sidenav-nav {
+  width: 35rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10.5rem 1rem 5rem 1rem;
+  margin-left: 0;
+  line-height: 3.5rem;
+  color: var(--PRIMARY-COLOR);
+  max-height: 100vh;
+  height: 100%;
+  box-shadow: 0 3px 6px var(--DEFAULT-CARD-SHADOW-1),
+    0 3px 6px var(--DEFAULT-CARD-SHADOW-2);
+  overflow-y: auto;
 }
 
-.sidenav-heading{
+.sidenav-heading {
   color: var(--TEXT-COLOR);
   font-size: 2.2rem;
   font-weight: 700;
   pointer-events: none;
 }
 
-.sidenav-item{
-  display:flex;
-  align-items:center;
-  padding: .5rem 10rem;
+.sidenav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 10rem;
   border-radius: 5px;
 }
 
-.sidenav-link{
+.sidenav-link {
   color: var(--SIDENAV-LINK-COLOR);
   width: 100%;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   padding-left: 2rem;
 }
 
-.sidenav-item:hover{
+.sidenav-item:hover {
   background-color: var(--GREY-COLOR);
   color: var(--BLACK-COLOR);
 }
 
+.close-sidebar-btn {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .sidenav-nav {
+    padding: 1rem;
+    left: auto;
+    right: 0;
+    transform: translateX(100%);
+    background-color: var(--WHITE-COLOR);
+    margin: 0;
+    z-index: 20;
+  }
+
+  .close-sidebar-btn {
+    display: block;
+  }
+}
+
+.sidebar-open {
+  transform: none;
+}
+
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overflow-hidden-y {
+  overflow-y: hidden;
+}
+
+.sidebar-fade {
+  transition: transform 0.3s ease-in-out;
+}
