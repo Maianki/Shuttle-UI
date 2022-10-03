@@ -79,3 +79,7 @@
 .sidebar-fade {
   transition: transform 0.3s ease-in-out;
 }
+
+.sidebar-dark {
+  background-color: var(--BG-COLOR);
+}

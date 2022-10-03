@@ -26,8 +26,10 @@ darkModeToggle.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
   if (darkMode !== 'enabled') {
     enableDarkMode();
+    sidebar.classList.add('sidebar-dark');
   } else {
     disableDarkMode();
+    sidebar.classList.remove('sidebar-dark');
   }
 });
 
