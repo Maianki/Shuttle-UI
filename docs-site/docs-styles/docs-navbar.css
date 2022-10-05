@@ -72,3 +72,8 @@ footer {
     display: none;
   }
 }
+@media screen and (max-width: 500px) {
+  #removed {
+    display: none;
+  }
+}
