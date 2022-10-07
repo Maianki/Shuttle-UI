@@ -79,12 +79,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  #removed {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 500px) {
   .remove{
     display: none;
   }
