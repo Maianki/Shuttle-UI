@@ -67,13 +67,32 @@ footer {
   cursor: pointer;
 }
 
+.remove{
+  display: inline-block;
+  margin-left:2px;
+}
+
 @media screen and (min-width: 1024px) {
   .btn-hamburger {
     display: none;
   }
 }
+
 @media screen and (max-width: 500px) {
   #removed {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .remove{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  a.nav-link{
+    margin-left:0;
+    margin-right:0;
   }
 }
