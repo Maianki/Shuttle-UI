@@ -1,19 +1,38 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('./components/components-styles/shuttleUI-main.css');
-@import url('./docs-site/docs-styles/docs-display-component.css');
-@import url('./docs-site/docs-styles/docs-navbar.css');
-@import url('./docs-site/docs-styles/docs-landing-page.css');
-@import url('./docs-site/docs-styles/docs-site-aside.css');
-@import url('./docs-site/docs-styles/docs-layout.css');
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    min-height:100vh; 
-    background-color: var(--BG-COLOR);
-}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+    @import url('./components/components-styles/shuttleUI-main.css');
+    @import url('./docs-site/docs-styles/docs-display-component.css');
+    @import url('./docs-site/docs-styles/docs-navbar.css');
+    @import url('./docs-site/docs-styles/docs-landing-page.css');
+    @import url('./docs-site/docs-styles/docs-site-aside.css');
+    @import url('./docs-site/docs-styles/docs-layout.css');
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: var(--BG-COLOR);
+    }
+    
+    .tooltip {
+        border-radius: 0.3rem;
+        position: absolute;
+        bottom: -5px;
+        background-color: var(--TOOLTIP-COLOR);
+        color: var(--WHITE-COLOR);
+        min-width: 80px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .addtooltip {
+        cursor: pointer;
+    }
+    
+    .addtooltip:hover .tooltip {
+        display: block;
+        opacity: 1;
+    }

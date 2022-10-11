@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2352d5969b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav class="nav-container flex-row ">
         <a class="navbar-brand" href="#">
             <img class="site-logo" src="./docs-site/assets/logo.png" alt="logo">
         </a>
-            
+
         <ul class="flex-row navbar-links">
             <li>
                 <a class="nav-link md-ht-1" href="docs.html"><i class="fab fa-dochub"></i>ocumentation</a>
@@ -21,9 +23,11 @@
             <li>
                 <a class="nav-link md-ht-1" href="https://github.com/Maianki/Shuttle-UI"><i class="fab fa-github-square"></i> Github</a>
             </li>
-            <li>
-                <a class="nav-link md-ht-1" id="dark-mode-toggle" role="button" aria-label="toggle dark mode"><i class="fas fa-moon"></i></a>
+            <li class="addtooltip">
+                <a class="nav-link md-ht-1" id="dark-mode-toggle" role="button" aria-label="toggle dark mode"><i class="fas fa-moon" id="toggle-mode-icon"></i> </a>
+                <div class="tooltip">mode</div>
             </li>
+
         </ul>
     </nav>
 
@@ -41,12 +45,12 @@
 
         <div class="responsive-img hero-img">
             <img src="./docs-site/assets/hero-img.svg" alt="hero">
-            
-        </div>
-        
-    </header> 
 
-    <footer class="footer align-items-center flex-column">   
+        </div>
+
+    </header>
+
+    <footer class="footer align-items-center flex-column">
         <p class="footer-description md-vt-1">Made by <span class="designed-by">Ankit Kumain</span></p>
         <div class="flex-row footer-links">
             <div>
@@ -61,4 +65,5 @@
     <script src="./docs-site/docs-Js/dark-mode.js"></script>
 
 </body>
+
 </html>
